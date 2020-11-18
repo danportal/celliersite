@@ -1,21 +1,19 @@
 import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav"
+import Button from "react-bootstrap/Button";
 
-const navBar = () => {
+const NavigationBar = () => {
 
-    return (
-        <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#home">
-          <img
-            alt=""
-            src="/logomain.png"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-          />{' '}
-          React Bootstrap
-        </Navbar.Brand>
+
+  return (
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="#home">Bookshop</Navbar.Brand>
+        Number of books 
+
+        <Button>Sign out</Button>
+
       </Navbar>
-    )
-}
+  );
+};
 
-export default navBar;
+export default NavigationBar;
