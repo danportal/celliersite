@@ -1,5 +1,5 @@
 import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav"
+import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 
 const NavigationBar = () => {
@@ -10,7 +10,7 @@ const NavigationBar = () => {
         <Navbar.Brand href="#home">Bookshop</Navbar.Brand>
         Number of books 
 
-        <Button>Sign out</Button>
+        <Button>Sign out hello please </Button>
 
       </Navbar>
   );
