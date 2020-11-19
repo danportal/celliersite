@@ -1,18 +1,18 @@
 
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap/Button";
-import { useState, React } from 'react'
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import About from "./pages/about";
+import Benefits from "./pages/benefits";
+import Contact from "./pages/contact";
+import Customers from "./pages/customers";
+import Home from "./pages/home";
+import Winetanks from "./pages/winetanks";
+
+
 
 function App() {
-
   return (
     <div> hello </div>
-  )
- 
+  );
 }
 
 export default App;
