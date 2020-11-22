@@ -26,6 +26,23 @@
   color: white;
 }
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+.BottomButton{
+
+border: black;
+border-style: solid;
+
+}
+
+
 .App-link {
   color: #61dafb;
 }
