@@ -42,7 +42,7 @@ function App() {
 Note: Needs text on image  */}
 <div>
 <Container>
-      <Image src= "Images/ImageAbove.jpg" rounded
+      <Image src= "Images/ImageAboveNew.jpg" rounded
       width= "100%"
       ></Image>
       </Container>
@@ -68,7 +68,7 @@ Note: need text on image */}
 
       <div>
 <Container>
-      <Image src= "Images/ConcreteBack.jpg" rounded
+      <Image src= "Images/ConcreteBackNew.jpg" rounded
       width= "100%"
       ></Image>
       <div class="">Centered</div>
