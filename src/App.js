@@ -21,7 +21,8 @@ function App() {
   return (
     <div 
       style={{
-        backgroundColor: 'wheat',
+        backgroundColor: 'wheat', 
+
       }}
       >
 
@@ -31,31 +32,38 @@ function App() {
   <Navbar.Toggle />
   <Navbar.Collapse className="justify-content-end">
     <Navbar.Text>
-      Signed in as: <a href="#login">request button goes here</a>
+      <a href="#login">request button goes here</a>
     </Navbar.Text>
   </Navbar.Collapse>
 </Navbar>
 </div>
 
+{/* First Image 
+Note: Needs text on image  */}
 <div>
 <Container>
       <Image src= "Images/ImageAbove.jpg" rounded
       width= "100%"
       ></Image>
-      <div class="">Centered</div>
-</Container>
+      </Container>
 </div>
 
+{/* Second Div with William's quote 
+Note: need to center text */}
+
       <div>
-      <Row style={{textAlign: "center"}}>
+      <Row>
       "Winemakers are artisans who deserve exceptional vessels that enable
           their wines to express their full potential without any distraction"
       </Row>
 
-      <Row style={{textAlign: "center"}}>
+      <Row>
         William Souter, CO-Founder
       </Row>
       </div>
+
+{/* Third part with concrete back 
+Note: need text on image */}
 
       <div>
 <Container>
@@ -67,6 +75,8 @@ function App() {
 </div>
 
 
+{/* Last part with image left and text right 
+Note: Button needs a dark border */}
 
 <div>
 <Container>
@@ -78,13 +88,21 @@ function App() {
       <div class="">Centered</div>
       </Col>
       <Col>
-      
+
+      <div>
       Our Tanks 
-      
+      </div >
+
+      <br></br>
+
+      <div>
       We have made it our mission to produce premium wine tanks 
       that stand out from the rest. The result? Wine tanks that are 
       unique in construction, discerning in functionality and 
       unparallelled in beauty
+      </div>
+
+      <Button variant="light" >Find Out More</Button> 
      
       </Col>
       </Row>

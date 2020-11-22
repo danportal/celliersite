@@ -35,6 +35,13 @@
 }
 
 
+.BottomButton{
+
+border: black;
+border-style: solid;
+
+}
+
 
 .App-link {
   color: #61dafb;
