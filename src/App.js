@@ -20,7 +20,11 @@ function App() {
   return (
     <div 
       style={{
+<<<<<<< HEAD
         backgroundColor: '#F1EDE2', 
+=======
+        backgroundColor: 'wheat', 
+>>>>>>> 7acf3f584b44d71020a8a9ae1c46eadbf3af6e4b
 
       }}
       >
@@ -50,7 +54,11 @@ Note: Needs text on image  */}
 {/* Second Div with William's quote 
 Note: need to center text */}
 
+<<<<<<< HEAD
       <div> 
+=======
+      <div>
+>>>>>>> 7acf3f584b44d71020a8a9ae1c46eadbf3af6e4b
       <Row>
       "Winemakers are artisans who deserve exceptional vessels that enable
           their wines to express their full potential without any distraction"
