@@ -11,7 +11,8 @@ import Customers from "./pages/customers";
 import Home from "./pages/home";
 import Winetanks from "./pages/winetanks";
 import Image from "react-bootstrap/Image";
-import Form from 'react-bootstrap/Form'
+import Form from 'react-bootstrap/Form';
+import Media from 'react-bootstrap/Media'
 
 function App() {
 
@@ -41,33 +42,46 @@ function App() {
 {/* First Image 
 Note: Needs text on image  */}
 <div>
-<Container>
-      <Image src= "Images/ImageAboveNew.jpg" rounded
+<Container fluid >
+      <Image src= "Images/ImageAboveNewText.jpg" rounded
       width= "100%"
       ></Image>
-      </Container>
+</Container>
 </div>
 
 {/* Second Div with William's quote 
 Note: need to center text */}
 
-      <div> 
-
-      <Row>
-      "Winemakers are artisans who deserve exceptional vessels that enable
+     <Container>
+     <Row>
+    <p>
+    <Col></Col>
+    </p>
+    <br></br>
+    <p>
+    <Col></Col>
+    </p>
+    <br></br>
+    </Row>
+        <Row className="justify-content-xl-center, .font"> 
+          <p>
+         "Winemakers are artisans who deserve exceptional vessels that enable
           their wines to express their full potential without any distraction"
-      </Row>
+          </p>
+        </Row>
 
-      <Row>
+      <Row className="justify-content-xl-center">
+        <p>
         William Souter, CO-Founder
+        </p>
       </Row>
-      </div>
+      </Container>
 
 {/* Third part with concrete back 
 Note: need text on image */}
 
       <div>
-<Container>
+<Container fluid >
       <Image src= "Images/ConcreteBackNew.jpg" rounded
       width= "100%"
       ></Image>
