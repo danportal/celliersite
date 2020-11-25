@@ -13,7 +13,8 @@ import Winetanks from "./pages/winetanks";
 import Image from "react-bootstrap/Image";
 import Form from 'react-bootstrap/Form';
 import Media from 'react-bootstrap/Media';
-import Jumbotron from 'react-bootstrap/Jumbotron'
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Card from 'react-bootstrap/Card'
 
 function App() {
 
@@ -105,7 +106,7 @@ Note: need text on image */}
 Note: Button needs a dark border */}
 
 <div>
-<Container>
+<Card style={{ backgroundColor: '#F1EDE2'}}>
     <Row>
       <Col>
       <br></br>
@@ -137,24 +138,36 @@ Note: Button needs a dark border */}
      
       </Col>
       </Row>
-</Container>
+</Card>
 </div>
 
-<div>
-<Container className="justify-content-center">
-      <div>
-        <p></p>
-      </div >
 
-      <br></br>
-
-      <div className="justify-content-xl-center"> 
-      Customise your tank's finish, features, fittings and more!
-      </div>
+<Card>
+      <Card.Body className="justify-content-xl-center" style={{ backgroundColor: '#F1EDE2'}}>
+      <Card.Title class="text-body">Customise your tank's finish, features, fittings and more!</Card.Title>
       <br></br>
       <Button variant="outline-secondary">Enquire Now</Button> 
-</Container>
-</div>
+      </Card.Body>
+</Card>
+
+
+<Card>
+  <Card.Body style={{ backgroundColor: '#061306'}} >
+    <Card.Title class="text-white">CONTACT US</Card.Title>
+    <br></br>
+    <Card.Text class="text-white">
+      sales@cellierwinetanks.com
+    <br></br>
+      FACEBOOK | INSTAGRAM | LINKEDIN
+    </Card.Text>
+    <Card.Text class="text-white">
+      __________________________________________________________________________________________________
+    </Card.Text>
+    <Card.Text class="text-white">
+      PRIVACY POLICY | TERMS AND CONDITIONS
+    </Card.Text>
+  </Card.Body>
+</Card>
  
 </div>
 
