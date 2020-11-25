@@ -13,6 +13,9 @@
   color: white;
 }
 
+.card {
+  border: none;
+}
 .centered {
   position: absolute;
   top: 50%;
