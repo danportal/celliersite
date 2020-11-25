@@ -35,7 +35,7 @@ function App() {
       <Nav.Link href="#contact">Contact Us</Nav.Link>
     </Nav>
     <Form inline>
-      <Button href="#contact" variant="outline-primary">Request A Quote</Button>
+      <Button href="#contact" variant="outline-secondary">Request A Quote</Button>
     </Form>
   </Navbar>
 
@@ -45,12 +45,13 @@ Note: Needs text on image  */}
 <Card className="text-white" style={{ width: '90rem', height: "50rem"}}>
   <Card.Img src= "Images/ImageAboveNew.jpg" alt="Card image"/>
   <Card.ImgOverlay>
-    <Card.Title>Card title</Card.Title>
+    <Card.Title className="App" >
+      <h1>FUNCTIONAL ELEGANCE</h1>
+    </Card.Title>
     <Card.Text>
-      This is a wider card with supporting text below as a natural lead-in to
-      additional content. This content is a little bit longer.
+      Manufacturer of Premium Concrete Wine Tanks
     </Card.Text>
-    <Card.Text>Last updated 3 mins ago</Card.Text>
+    <Button href="#contact" variant="outline-light">Request A Quote</Button>
   </Card.ImgOverlay>
 </Card>
 <br></br>
@@ -77,10 +78,9 @@ Note: need text on image */}
 <Card className="text-white" style={{ width: '90rem', height: "30rem"}}>
   <Card.Img src= "Images/ConcreteBackNew.jpg" alt="Card image"/>
   <Card.ImgOverlay>
-    <Card.Title>Card title</Card.Title>
+    <Card.Title className="text-warning">THE BENEFITS</Card.Title>
     <Card.Text>
-      This is a wider card with supporting text below as a natural lead-in to
-      additional content. This content is a little bit longer.
+      <b>WHAT MAKES CONCRETE SO SPECIAL?</b>
     </Card.Text>
     <Card.Text>Last updated 3 mins ago</Card.Text>
   </Card.ImgOverlay>
