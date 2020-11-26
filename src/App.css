@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -16,6 +24,7 @@
 .card {
   border: none;
 }
+
 .centered {
   position: absolute;
   top: 50%;
@@ -25,18 +34,21 @@
 }
 
 
-.BottomButton{
+.BottomButton {
 
 border: black;
 border-style: solid;
 
 }
 
-.font{
+.bodyCard {
 
-  font-family: montserrat;
+  font-size: 20em;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
   
-}
+  }
+  
 
 
 .App-link {

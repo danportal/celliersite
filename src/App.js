@@ -29,43 +29,49 @@ function App() {
 <Navbar style={{ backgroundColor: '#F1EDE2'}}>
     <Navbar.Brand href="#home">LOGO HERE</Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="#winetanks">Wine Tanks</Nav.Link>
-      <Nav.Link href="#benefits">Benefits of Concrete</Nav.Link>
-      <Nav.Link href="#about">Our Story</Nav.Link>
-      <Nav.Link href="#contact">Contact Us</Nav.Link>
+      <Nav.Link href="#winetanks">WINE TANKS</Nav.Link>
+      <Nav.Link href="#benefits">BENEFITS OF CONCRETE</Nav.Link>
+      <Nav.Link href="#about">OUR STORY</Nav.Link>
+      <Nav.Link href="#contact">CONTACT US</Nav.Link>
     </Nav>
     <Form inline>
       <Button href="#contact" variant="outline-secondary">Request A Quote</Button>
     </Form>
   </Navbar>
 
+ 
+
 {/* First Image 
 Note: Needs text on image  */}
+  
 
-<Card className="text-white" style={{ width: '90rem', height: "50rem"}}>
+<Card className="text-white">
   <Card.Img src= "Images/ImageAboveNew.jpg" alt="Card image"/>
-  <Card.ImgOverlay>
-    <Card.Title className="App" >
-      <h1>FUNCTIONAL ELEGANCE</h1>
-    </Card.Title>
-    <Card.Text>
-      Manufacturer of Premium Concrete Wine Tanks
-    </Card.Text>
-    <Button href="#contact" variant="outline-light">Request A Quote</Button>
+    <Card.ImgOverlay>
+      <Card.Body>
+        <Card.Title style={{fontFamily: 'sans-serif'}}>
+          FUNCTIONAL ELEGANCE
+        </Card.Title>
+          <Card.Subtitle>
+              Manufacturer of Premium Concrete Wine Tanks
+          </Card.Subtitle>
+          <br></br>
+            <Button href="#contact" variant="outline-light">Request A Quote</Button>
+      </Card.Body>
   </Card.ImgOverlay>
-</Card>
-<br></br>
+  </Card>
+  <br></br>
 
 {/* Second Div with William's quote 
 Note: need to center text */}
 
-      <Card className="card">
-      <Card.Body className="justify-content-center" style={{ backgroundColor: '#EEECE6'}}>
+      <Card className="card" style={{ backgroundColor: '#EEECE6', borderColor: '#F1EDE2'}}>
+      <Card.Body>
       <Card.Title class="text-body">"Winemakers are artisans who deserve exceptional vessels that enable
           their wines to express their full potential without any distraction"
-          <p>
-        William Souter, CO-Founder
-        </p>
+          <Card.Subtitle class="text-body">
+          - William Souter, Co-Founder
+          </Card.Subtitle>
         </Card.Title>
       <br></br>
       </Card.Body>
@@ -88,10 +94,10 @@ Note: need text on image */}
 
 
 {/* Last part with image left and text right 
-Note: Button needs a dark border */}
+Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
 
-<div>
-<Card style={{ backgroundColor: '#EEECE6'}}>
+<div> 
+<Card className="card" style={{ backgroundColor: '#EEECE6', borderColor: '#F1EDE2'}}>
     <Row>
       <Col>
       <br></br>
@@ -127,7 +133,7 @@ Note: Button needs a dark border */}
 </div>
 
 
-<Card className="card">
+<Card className="card" style={{ borderColor: '#F1EDE2'}}>
       <Card.Body className="justify-content-xl-center" style={{ backgroundColor: '#EEECE6'}}>
       <Card.Title class="text-body">Customise your tank's finish, features, fittings and more!</Card.Title>
       <br></br>
