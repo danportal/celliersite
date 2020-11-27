@@ -27,7 +27,8 @@ function App() {
 
 
 <Navbar style={{ backgroundColor: '#F1EDE2'}}>
-    <Navbar.Brand href="#home">LOGO HERE</Navbar.Brand>
+    <Navbar.Brand href="#home"><Card.Img src= "Images/CellierLogo.png" alt="Logo"></Card.Img>
+    </Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link href="#winetanks">WINE TANKS</Nav.Link>
       <Nav.Link href="#benefits">BENEFITS OF CONCRETE</Nav.Link>
@@ -43,20 +44,26 @@ function App() {
 
 {/* First Image 
 Note: Needs text on image  */}
-  
+
 
 <Card className="text-white">
   <Card.Img src= "Images/ImageAboveNew.jpg" alt="Card image"/>
     <Card.ImgOverlay>
       <Card.Body>
-        <Card.Title style={{fontFamily: 'sans-serif'}}>
-          FUNCTIONAL ELEGANCE
+        <Card.Title >
+        <Row className="justify-content-md-center">
+          <h1>FUNCTIONAL ELEGANCE</h1>
+        </Row>  
         </Card.Title>
           <Card.Subtitle>
+          <Row className="justify-content-md-center">
               Manufacturer of Premium Concrete Wine Tanks
+          </Row>
           </Card.Subtitle>
           <br></br>
+          <Row className="justify-content-md-center">
             <Button href="#contact" variant="outline-light">Request A Quote</Button>
+          </Row>
       </Card.Body>
   </Card.ImgOverlay>
   </Card>
@@ -67,10 +74,15 @@ Note: need to center text */}
 
       <Card className="card" style={{ backgroundColor: '#EEECE6', borderColor: '#F1EDE2'}}>
       <Card.Body>
-      <Card.Title class="text-body">"Winemakers are artisans who deserve exceptional vessels that enable
-          their wines to express their full potential without any distraction"
+      <Card.Title class="text-body">
+        <Row className="justify-content-md-center">
+        "Winemakers are artisans who deserve exceptional vessels that enable
+        their wines to express their full potential without any distraction"
+        </Row>
           <Card.Subtitle class="text-body">
-          - William Souter, Co-Founder
+            <Row className="justify-content-md-center">
+              - William Souter, Co-Founder
+            </Row>
           </Card.Subtitle>
         </Card.Title>
       <br></br>
@@ -96,48 +108,48 @@ Note: need text on image */}
 {/* Last part with image left and text right 
 Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
 
-<div> 
+
 <Card className="card" style={{ backgroundColor: '#EEECE6', borderColor: '#F1EDE2'}}>
-    <Row>
-      <Col>
+    <Row style={{padding: "5em"}}>
       <br></br>
       <Image src= "Images/ImageBollow.jpg" rounded
       width = "50%"
       ></Image>
-      <div class=""></div>
-      </Col>
+
       <Col>
-
-      <div>
-        <p></p>
-      Our Tanks 
-      </div >
-
       <br></br>
-
-      <div>
-      We have made it our mission to produce premium wine tanks 
-      that stand out from the rest. The result? Wine tanks that are 
-      unique in construction, discerning in functionality and 
-      unparallelled in beauty
-  
-      </div>
-      <br></br>
-
-
-      <Button variant="outline-secondary">Find Out More</Button> 
-     
+      <Card style={{ fontFamily: 'montserrat', backgroundColor: '#EEECE6', borderColor: '#F1EDE2', padding: "5em"}}  class="text-body">
+        <Row>
+        <Card.Title>
+        <h2>OUR TANKS</h2>
+        </Card.Title>
+          <Card.Body>
+          We have made it our mission to produce premium wine tanks 
+          that stand out from the rest. The result? Wine tanks that are 
+          unique in construction, discerning in functionality and 
+          unparallelled in beauty
+          </Card.Body>
+          </Row>
+      </Card>
+      <Row className="justify-content-left" style={{padding: "5em"}}>
+      <Button variant="outline-secondary">FIND OUT MORE</Button> 
+      </Row>
       </Col>
       </Row>
 </Card>
-</div>
+
 
 
 <Card className="card" style={{ borderColor: '#F1EDE2'}}>
-      <Card.Body className="justify-content-xl-center" style={{ backgroundColor: '#EEECE6'}}>
+      <Card.Body style={{ backgroundColor: '#EEECE6'}}>
+      <Row className="justify-content-md-center">
       <Card.Title class="text-body">Customise your tank's finish, features, fittings and more!</Card.Title>
+      </Row> 
       <br></br>
-      <Button variant="outline-secondary">Enquire Now</Button> 
+      <Row className="justify-content-md-center">
+      <Button variant="outline-secondary">ENQUIRE NOW</Button> 
+      </Row>
+      <br></br>
       </Card.Body>
 </Card>
 
