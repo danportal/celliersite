@@ -25,8 +25,12 @@ function App() {
   return (
 <div style={{ backgroundColor: '#EEECE6'}}>
 
+{/* Style block */}
 
-<Navbar style={{ backgroundColor: '#F1EDE2'}}>
+
+{/*  */}
+
+<Navbar style={{ backgroundColor: '#F1EDE2' , textAlign: 'center'}}>
     <Navbar.Brand href="#home"><Card.Img src= "Images/CellierLogo.png" alt="Logo"></Card.Img>
     </Navbar.Brand>
     <Nav className="mr-auto">
@@ -52,7 +56,10 @@ Note: Needs text on image  */}
       <Card.Body>
         <Card.Title >
         <Row className="justify-content-md-center">
+
+
           <h1>FUNCTIONAL ELEGANCE</h1>
+
         </Row>  
         </Card.Title>
           <Card.Subtitle>
@@ -75,15 +82,21 @@ Note: need to center text */}
       <Card className="card" style={{ backgroundColor: '#EEECE6', borderColor: '#F1EDE2'}}>
       <Card.Body>
       <Card.Title class="text-body">
-        <Row className="justify-content-md-center">
-        "Winemakers are artisans who deserve exceptional vessels that enable
+        <Row> 
+        <Card.Text  style={{
+      fontSize: '2em', fontFamily: 
+    'Segoe UI, Tahoma, Geneva, Verdana, sans-serif', textAlign: 'center'}}>
+        "Winemakers are artisans who deserve exceptional vessels that enable 
         their wines to express their full potential without any distraction"
+      
+        <h3></h3> - William Souter, Co-Founder
+        <br></br>
+
+        </Card.Text>
         </Row>
-          <Card.Subtitle class="text-body">
-            <Row className="justify-content-md-center">
-              - William Souter, Co-Founder
-            </Row>
-          </Card.Subtitle>
+          
+
+          
         </Card.Title>
       <br></br>
       </Card.Body>
@@ -92,18 +105,54 @@ Note: need to center text */}
 {/* Third part with concrete back 
 Note: need text on image */}
 
-
-<Card className="text-white" style={{ width: '90rem', height: "30rem"}}>
+<Row>
+<Col className="justify-content-left">
+<Card className="text-white">
   <Card.Img src= "Images/ConcreteBackNew.jpg" alt="Card image"/>
   <Card.ImgOverlay>
-    <Card.Title className="text-warning">THE BENEFITS</Card.Title>
-    <Card.Text>
-      <b>WHAT MAKES CONCRETE SO SPECIAL?</b>
+    <Card.Title className="text-warning" style={{
+      fontSize: '1rem', fontFamily: 
+    'Segoe UI, Tahoma, Geneva, Verdana, sans-serif', textAlign: 'center'}}>
+      THE BENEFITS</Card.Title>
+    <Card.Text style={{
+      fontSize: '3rem', fontFamily: 
+    'Segoe UI, Tahoma, Geneva, Verdana, sans-serif', textAlign: 'center'}} >
+      WHAT MAKES <br></br> CONCRETE SO <br></br> SPECIAL?
     </Card.Text>
-    <Card.Text>Last updated 3 mins ago</Card.Text>
   </Card.ImgOverlay>
 </Card>
+</Col>
+<Col className="justify-content-right">
+<Card className="text-white">
+  <Card.Img src= "Images/ConcreteBackNew.jpg" alt="Card image"/>
+  <Card.ImgOverlay>
+    <Card.Title className="text-warning"></Card.Title>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <Card.Text style={{
+      fontSize: '2rem', fontFamily: 
+    'Segoe UI, Tahoma, Geneva, Verdana, sans-serif', textAlign: 'center'}}>
+      
+      Concrete vessels are completely neutral which <br></br>
+      allow wines to express their unique identity <br></br>
+      by showcasing their purity and terror <br></br>
+    </Card.Text>
 
+    <Card.Link style={{
+      fontSize: '2rem', fontFamily: 
+    'Segoe UI, Tahoma, Geneva, Verdana, sans-serif', textAlign: 'center'}} 
+    href="Benefits" class="text-white">
+      
+      DISCOVER THE BENEFITS
+
+    </Card.Link>
+  </Card.ImgOverlay>
+</Card>
+</Col>
+</Row>
 
 {/* Last part with image left and text right 
 Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
@@ -114,6 +163,7 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
       <br></br>
       <Image src= "Images/ImageBollow.jpg" rounded
       width = "50%"
+      height = "50%"
       ></Image>
 
       <Col>
