@@ -31,13 +31,13 @@ function App() {
 {/*  */}
 
 <Navbar style={{ backgroundColor: '#F1EDE2' , textAlign: 'center'}}>
-    <Navbar.Brand href="#home"><Card.Img src= "Images/CellierLogo.png" alt="Logo"></Card.Img>
+    <Navbar.Brand href="/"><Card.Img src= "Images/CellierLogo.png" alt="Logo"></Card.Img>
     </Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="#winetanks">WINE TANKS</Nav.Link>
-      <Nav.Link href="#benefits">BENEFITS OF CONCRETE</Nav.Link>
-      <Nav.Link href="#about">OUR STORY</Nav.Link>
-      <Nav.Link href="#contact">CONTACT US</Nav.Link>
+      <Nav.Link href="/winetanks">WINE TANKS</Nav.Link>
+      <Nav.Link href="/benefits">BENEFITS OF CONCRETE</Nav.Link>
+      <Nav.Link href="/about">OUR STORY</Nav.Link>
+      <Nav.Link href="/contact">CONTACT US</Nav.Link>
     </Nav>
     <Form inline>
       <Button href="#contact" variant="outline-secondary">Request A Quote</Button>
@@ -49,140 +49,133 @@ function App() {
 {/* First Image 
 Note: Needs text on image  */}
 
+<style type="text/css">
+    {`
+    .btn-flat {
+      background-color: purple;
+      color: white;
+    }
 
-<Card className="text-white">
+    .btn-xxl {
+      padding: 1rem 1.5rem;
+      font-size: 1.5rem;
+    }
+    `}
+  </style>
+
+
+<Card>
   <Card.Img src= "Images/ImageAboveNew.jpg" alt="Card image"/>
-    <Card.ImgOverlay>
+    <Card.ImgOverlay style={{ position: "absolute",top:"35%",Left:"50%"}} >
       <Card.Body>
-        <Card.Title >
-        <Row className="justify-content-md-center">
-
-
-          <h1>FUNCTIONAL ELEGANCE</h1>
-
-        </Row>  
+        <Card.Title className="text-white" >
+        <h1 style={{ fontSize: '5rem', fontFamily: 'Montserrat', textAlign: 'center'}}> FUNCTIONAL ELEGANCE</h1>
         </Card.Title>
-          <Card.Subtitle>
-          <Row className="justify-content-md-center">
+          <Card.Subtitle style={{ fontSize: '2em', fontFamily: 'Montserrat', textAlign: 'center', color: "white"}}>
+          <Row className="justify-content-center" >
               Manufacturer of Premium Concrete Wine Tanks
           </Row>
           </Card.Subtitle>
           <br></br>
-          <Row className="justify-content-md-center">
-            <Button href="#contact" variant="outline-light">Request A Quote</Button>
+          <Row className="justify-content-center">
+            <Button href="/contact" variant="outline-light" size="xxl">REQUEST A QUOTE</Button>
           </Row>
       </Card.Body>
   </Card.ImgOverlay>
   </Card>
   <br></br>
 
+
 {/* Second Div with William's quote 
 Note: need to center text */}
 
+<style type="text/css">
+    {`
+    .centered {
+      position: 
+      absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    `}
+  </style>
+
       <Card className="card" style={{ backgroundColor: '#EEECE6', borderColor: '#F1EDE2'}}>
-      <Card.Body>
-      <Card.Title class="text-body">
-        <Row> 
-        <Card.Text  style={{
-      fontSize: '2em', fontFamily: 
-    'Segoe UI, Tahoma, Geneva, Verdana, sans-serif', textAlign: 'center'}}>
-        "Winemakers are artisans who deserve exceptional vessels that enable 
-        their wines to express their full potential without any distraction"
-      
-        <h3></h3> - William Souter, Co-Founder
-        <br></br>
-
-        </Card.Text>
-        </Row>
-          
-
-          
-        </Card.Title>
+        <Card.Body>
+          <Card.Text class="text-body">
+            <Row  style={{ fontSize: '2em', fontFamily: 'Montserrat, sans-serif'}} >
+              <h3 style={{padding: "1rem", textAlign: 'center'}}>"Winemakers are artisans who deserve exceptional vessels that enable 
+              their wines to express their full potential without any distraction"</h3>
+              <h4 style={{position: "absolute",top:"80%",right: "39%"}}>- William Souter, Co-Founder </h4>
+            </Row>
+          </Card.Text>
+        </Card.Body>
+      </Card>
       <br></br>
-      </Card.Body>
-</Card>
 
 {/* Third part with concrete back 
 Note: need text on image */}
 
-<Row>
-<Col className="justify-content-left">
-<Card className="text-white">
-  <Card.Img src= "Images/ConcreteBackNew.jpg" alt="Card image"/>
-  <Card.ImgOverlay>
-    <Card.Title className="text-warning" style={{
-      fontSize: '1rem', fontFamily: 
-    'Segoe UI, Tahoma, Geneva, Verdana, sans-serif', textAlign: 'center'}}>
-      THE BENEFITS</Card.Title>
-    <Card.Text style={{
-      fontSize: '3rem', fontFamily: 
-    'Segoe UI, Tahoma, Geneva, Verdana, sans-serif', textAlign: 'center'}} >
-      WHAT MAKES <br></br> CONCRETE SO <br></br> SPECIAL?
-    </Card.Text>
-  </Card.ImgOverlay>
-</Card>
-</Col>
-<Col className="justify-content-right">
-<Card className="text-white">
-  <Card.Img src= "Images/ConcreteBackNew.jpg" alt="Card image"/>
-  <Card.ImgOverlay>
-    <Card.Title className="text-warning"></Card.Title>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <Card.Text style={{
-      fontSize: '2rem', fontFamily: 
-    'Segoe UI, Tahoma, Geneva, Verdana, sans-serif', textAlign: 'center'}}>
-      
-      Concrete vessels are completely neutral which <br></br>
-      allow wines to express their unique identity <br></br>
-      by showcasing their purity and terror <br></br>
-    </Card.Text>
 
-    <Card.Link style={{
-      fontSize: '2rem', fontFamily: 
-    'Segoe UI, Tahoma, Geneva, Verdana, sans-serif', textAlign: 'center'}} 
-    href="Benefits" class="text-white">
+
+<Card>
+
+  <Card.Img  src= "Images/ConcreteBackCrop.jpg" alt="Card image"/>
+  <Card.ImgOverlay>
+    <Card.Title className="text-warning" style={{ fontSize: '2rem', fontFamily:'montserrat', textAlign: "left", position: "absolute",top:"15%",left:"5%"}}>
+      THE BENEFITS
+    </Card.Title>
+    <Card.Text style={{ fontSize: '3rem', fontFamily: 'montserrat', textAlign: 'left', position: "absolute",top:"25%",left:"5%", color: "white"}} >
+      <b>WHAT MAKES <br></br> CONCRETE SO <br></br> SPECIAL?</b>
+    </Card.Text>
+    <Card.Link class="text-white" style={{ textDecoration: "underline", fontSize: '2rem', fontFamily: 'montserrat', textAlign: 'left', position: "absolute",top:"57%", right:"27.5%"}} href="/benefits">
       
-      DISCOVER THE BENEFITS
+      <b>DISCOVER THE BENEFITS</b>
 
     </Card.Link>
-  </Card.ImgOverlay>
+ 
+ <Card.Text className="text-white" style={{fontSize: '2rem', fontFamily:'montserrat', textAlign: 'left', position: "absolute",top:"26%", right:"5%"}}>
+      Concrete vessels are completely neutral which <br></br>
+      allows wines to express their unique identity <br></br>
+      by showcasing their purity and terroir. <br></br>
+</Card.Text>
+</Card.ImgOverlay>
 </Card>
-</Col>
-</Row>
+
+
+
 
 {/* Last part with image left and text right 
 Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
 
 
-<Card className="card" style={{ backgroundColor: '#EEECE6', borderColor: '#F1EDE2'}}>
-    <Row style={{padding: "5em"}}>
-      <br></br>
-      <Image src= "Images/ImageBollow.jpg" rounded
-      width = "50%"
-      height = "50%"
-      ></Image>
+<Card style={{ backgroundColor: '#EEECE6', borderColor: '#EEECE6'}}>
+    <Row style={{padding: "6em"}}>
 
-      <Col>
+  <Image src= "Images/ImageBollow.jpg" rounded
+      width = "40%"
+      height = "40%"
+      ></Image> 
+
+      <Col xs={12} md={6}>
       <br></br>
       <Card style={{ fontFamily: 'montserrat', backgroundColor: '#EEECE6', borderColor: '#F1EDE2', padding: "5em"}}  class="text-body">
-        <Row>
-        <Card.Title>
-        <h2>OUR TANKS</h2>
+
+        <Card.Title style={{ fontSize: '3rem', fontFamily: 'montserrat', textAlign: 'left', position: "absolute",top:"45%",left:"16%"}}>
+        <b>OUR TANKS</b>
         </Card.Title>
-          <Card.Body>
+          <Card.Body style={{ fontSize: '1.3rem', fontFamily: 'montserrat', textAlign: 'left', position: "absolute",top:"75%",left:"13%"}}>
           We have made it our mission to produce premium wine tanks 
           that stand out from the rest. The result? Wine tanks that are 
           unique in construction, discerning in functionality and 
           unparallelled in beauty
           </Card.Body>
-          </Row>
       </Card>
-      <Row className="justify-content-left" style={{padding: "5em"}}>
-      <Button variant="outline-secondary">FIND OUT MORE</Button> 
+      <br></br>
+      <br></br>
+      <Row style={{padding: "8em", position: "absolute",left:"0%"}}>
+      <Button variant="outline-secondary" size="xl">FIND OUT MORE</Button> 
       </Row>
       </Col>
       </Row>
@@ -190,10 +183,14 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
 
 
 
-<Card className="card" style={{ borderColor: '#F1EDE2'}}>
+<Card className="card" style={{ borderColor: '#EEECE6' , backgroundColor: '#EEECE6'}}>
+  <br></br>
       <Card.Body style={{ backgroundColor: '#EEECE6'}}>
-      <Row className="justify-content-md-center">
-      <Card.Title class="text-body">Customise your tank's finish, features, fittings and more!</Card.Title>
+      <Row className="justify-content-center">
+      <Card.Title class="text-body" style={{ fontSize: '2.2rem', fontFamily: 'montserrat', textAlign: 'center', position: "absolute",top:"-20%",left:"32%"}}>
+        Customise your tank's finish, <br></br>features, fittings and more!
+        </Card.Title>
+        <br></br>
       </Row> 
       <br></br>
       <Row className="justify-content-md-center">
@@ -210,18 +207,17 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
     <br></br>
     <Card.Link class="text-white" href="contactpage">sales@cellierwinetanks.com</Card.Link>
     <br></br>
-    <Card.Link class="text-white" href="contactpage"> FACEBOOK |</Card.Link>
+    <Card.Link style={{}}class="text-white" href="contactpage"> FACEBOOK |</Card.Link>
     <Card.Link class="text-white" href="contactpage"> INSTAGRAM |</Card.Link>
     <Card.Link class="text-white" href="contactpage"> LINKEDIN</Card.Link>
-    <Card.Text class="text-white">
-      __________________________________________________________________________________________________
-    </Card.Text>
+    
+<Card.Text class="text-white" >____________________________________________________________________________________________________________________________________________________________</Card.Text>
     <Card.Text class="text-white">
       PRIVACY POLICY | TERMS AND CONDITIONS
     </Card.Text>
   </Card.Body>
 </Card>
- 
+
 </div>
 
 
