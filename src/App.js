@@ -30,7 +30,7 @@ function App() {
 
 {/*  */}
 
-<Navbar style={{ backgroundColor: '#F1EDE2' , textAlign: 'center'}}>
+<Navbar fixed="top" style={{ backgroundColor: '#F1EDE2' , textAlign: 'center'}}>
     <Navbar.Brand href="/"><Card.Img src= "Images/CellierLogo.png" alt="Logo"></Card.Img>
     </Navbar.Brand>
     <Nav className="mr-auto">
@@ -43,8 +43,6 @@ function App() {
       <Button href="#contact" variant="outline-secondary">Request A Quote</Button>
     </Form>
   </Navbar>
-
- 
 
 {/* First Image 
 Note: Needs text on image  */}
@@ -123,12 +121,16 @@ Note: need text on image */}
 
   <Card.Img  src= "Images/ConcreteBackCrop.jpg" alt="Card image"/>
   <Card.ImgOverlay>
+
+
     <Card.Title className="text-warning" style={{ fontSize: '2rem', fontFamily:'montserrat', textAlign: "left", position: "absolute",top:"15%",left:"5%"}}>
       THE BENEFITS
     </Card.Title>
     <Card.Text style={{ fontSize: '3rem', fontFamily: 'montserrat', textAlign: 'left', position: "absolute",top:"25%",left:"5%", color: "white"}} >
       <b>WHAT MAKES <br></br> CONCRETE SO <br></br> SPECIAL?</b>
     </Card.Text>
+
+
     <Card.Link class="text-white" style={{ textDecoration: "underline", fontSize: '2rem', fontFamily: 'montserrat', textAlign: 'left', position: "absolute",top:"57%", right:"27.5%"}} href="/benefits">
       
       <b>DISCOVER THE BENEFITS</b>
