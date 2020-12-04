@@ -16,7 +16,13 @@ import Winetanks from "./pages/winetanks";
 import Image from "react-bootstrap/Image";
 import Media from 'react-bootstrap/Media';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import Card from 'react-bootstrap/Card'
+import Card from 'react-bootstrap/Card';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom"
 
 function App() {
 
@@ -26,23 +32,60 @@ function App() {
 <div style={{ backgroundColor: '#EEECE6'}}>
 
 {/* Style block */}
-
-
-{/*  */}
-
+<Router>
 <Navbar fixed="top" style={{ backgroundColor: '#F1EDE2' , textAlign: 'center'}}>
     <Navbar.Brand href="/"><Card.Img src= "Images/CellierLogo.png" alt="Logo"></Card.Img>
     </Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="/winetanks">WINE TANKS</Nav.Link>
+      <Link href="/winetanks">WINE TANKS</Link>
       <Nav.Link href="/benefits">BENEFITS OF CONCRETE</Nav.Link>
       <Nav.Link href="/about">OUR STORY</Nav.Link>
+      <Nav.Link href="/customers">CUSTOMERS</Nav.Link>
       <Nav.Link href="/contact">CONTACT US</Nav.Link>
     </Nav>
     <Form inline>
       <Button href="#contact" variant="outline-secondary">Request A Quote</Button>
     </Form>
   </Navbar>
+        <Switch>
+          <Route path="/winetanks">
+            <Winetanks />
+          </Route>
+          <Route path="/benefits">
+            <Benefits />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/customers">
+            <Customers />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+</Router>
+
+
+
+{/* Navbar fixed="top" style={{ backgroundColor: '#F1EDE2' , textAlign: 'center'}}>
+    <Navbar.Brand href="/"><Card.Img src= "Images/CellierLogo.png" alt="Logo"></Card.Img>
+    </Navbar.Brand>
+    <Nav className="mr-auto">
+      <Nav.Link href="/winetanks">WINE TANKS</Nav.Link>
+      <Nav.Link href="/benefits">BENEFITS OF CONCRETE</Nav.Link>
+      <Nav.Link href="/about">OUR STORY</Nav.Link>
+      <Nav.Link href="/customers">CUSTOMERS</Nav.Link>
+      <Nav.Link href="/contact">CONTACT US</Nav.Link>
+    </Nav>
+    <Form inline>
+      <Button href="#contact" variant="outline-secondary">Request A Quote</Button>
+    </Form>
+  </Navbar>
+ */} 
 
 {/* First Image 
 Note: Needs text on image  */}
