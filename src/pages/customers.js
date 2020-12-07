@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
@@ -136,42 +137,86 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
       <Card style={{ fontFamily: 'montserrat', backgroundColor: '#EEECE6', borderColor: '#F1EDE2', padding: "5em"}}  class="text-body">
 
         <Card.Title style={{ fontSize: '3rem', fontFamily: 'montserrat', textAlign: 'left', position: "absolute",top:"45%",left:"16%"}}>
-        <b>OUR TANKS</b>
+        <b>THIS WILL BE CARD ONE - TEXT ON RIGHT </b>
         </Card.Title>
           <Card.Body style={{ fontSize: '1.3rem', fontFamily: 'montserrat', textAlign: 'left', position: "absolute",top:"75%",left:"13%"}}>
-          We have made it our mission to produce premium wine tanks 
-          that stand out from the rest. The result? Wine tanks that are 
-          unique in construction, discerning in functionality and 
-          unparallelled in beauty
+          this is the card at the top text on right khkuafgskjhg skgLKHAkjgs
+          kGSKA`JHGSHJ,AJHGSKJAGKJAHJDV
+          AJGKDGSHJafkhsfjhafjkgs
           </Card.Body>
       </Card>
       <br></br>
       <br></br>
-      <Row style={{padding: "8em", position: "absolute",left:"0%"}}>
-      <Button variant="outline-secondary" size="xl">FIND OUT MORE</Button> 
+    
+      </Col>
       </Row>
+</Card>
+
+<br></br>
+<br></br>
+<Card style={{ backgroundColor: '#EEECE6', borderColor: '#EEECE6'}}>
+    <Row style={{padding: "6em"}}>
+
+  <Image src= "Images/ImageBollow.jpg" rounded
+      width = "40%"
+      height = "40%"
+      ></Image> 
+
+      <Col xs={12} md={6}>
+      <br></br>
+      <Card style={{ fontFamily: 'montserrat', backgroundColor: '#EEECE6', borderColor: '#F1EDE2', padding: "5em"}}  class="text-body">
+
+        <Card.Title style={{ fontSize: '3rem', fontFamily: 'montserrat', textAlign: 'left', position: "absolute",top:"45%",left:"16%"}}>
+        <b>TEXT ON LEFT </b>
+        </Card.Title>
+          <Card.Body style={{ fontSize: '1.3rem', fontFamily: 'montserrat', textAlign: 'left', position: "absolute",top:"75%",left:"13%"}}>
+          Wsecond card image on right text on left 
+          shjkgsjsgksgs
+          jkfajhfjksfajghL
+          whjkAGSJAFKJYFSYJ
+          </Card.Body>
+      </Card>
+      <br></br>
+      <br></br>
+     
+      </Col>
+      </Row>
+</Card>
+
+<br></br>
+<br></br>
+
+<Card style={{ backgroundColor: '#EEECE6', borderColor: '#EEECE6'}}>
+    <Row style={{padding: "6em"}}>
+
+  <Image src= "Images/ImageBollow.jpg" rounded
+      width = "40%"
+      height = "40%"
+      ></Image> 
+
+      <Col xs={12} md={6}>
+      <br></br>
+      <Card style={{ fontFamily: 'montserrat', backgroundColor: '#EEECE6', borderColor: '#F1EDE2', padding: "5em"}}  class="text-body">
+
+        <Card.Title style={{ fontSize: '3rem', fontFamily: 'montserrat', textAlign: 'left', position: "absolute",top:"45%",left:"16%"}}>
+        <b>TEXT ON RIGHT </b>
+        </Card.Title>
+          <Card.Body style={{ fontSize: '1.3rem', fontFamily: 'montserrat', textAlign: 'left', position: "absolute",top:"75%",left:"13%"}}>
+          image on left text on right 
+          hsigjhksfakjhsdfa\kgkjg
+          jkaghkgdjkghajkb
+          ljdgkjagKJGSAKJ
+          </Card.Body>
+      </Card>
+      <br></br>
+      <br></br>
+
       </Col>
       </Row>
 </Card>
 
 
 
-<Card className="card" style={{ borderColor: '#EEECE6' , backgroundColor: '#EEECE6'}}>
-  <br></br>
-      <Card.Body style={{ backgroundColor: '#EEECE6'}}>
-      <Row className="justify-content-center">
-      <Card.Title class="text-body" style={{ fontSize: '2.2rem', fontFamily: 'montserrat', textAlign: 'center', position: "absolute",top:"-20%",left:"32%"}}>
-        Customise your tank's finish, <br></br>features, fittings and more!
-        </Card.Title>
-        <br></br>
-      </Row> 
-      <br></br>
-      <Row className="justify-content-md-center">
-      <Button variant="outline-secondary">ENQUIRE NOW</Button> 
-      </Row>
-      <br></br>
-      </Card.Body>
-</Card>
 
 
 <Card>

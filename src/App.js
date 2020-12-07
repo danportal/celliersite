@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
@@ -8,11 +9,11 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import About from "./pages/about";
-import Benefits from "./pages/benefits";
-import Contact from "./pages/contact";
-import Customers from "./pages/customers";
-import Home from "./pages/home";
-import Winetanks from "./pages/winetanks";
+import Benefits from "./pages/Benefits";
+import Contact from "./pages/Contact";
+import Customers from "./pages/Customers";
+import Home from "./pages/Home";
+import Winetanks from "./pages/Winetanks";
 import Image from "react-bootstrap/Image";
 import Media from 'react-bootstrap/Media';
 import Jumbotron from 'react-bootstrap/Jumbotron';
@@ -26,18 +27,25 @@ import {
 
 function App() {
 
-
+// ***** MAIN ISSUES ****
+// we are still coding the other pages, we simply cant progress without fixing reponsiveness and navbar routing 
+// our biggest and main issue is that the navbar is not working or compiling
+// our second biggest issue is responsiveness, nothing seems to work right 
+// when compiling this is the error we get: " ./src/pages/Contact.js
+// Module not found: Can't resolve './pages/Benefits' in '/Users/mac/Client_sites/cellier/cellier-wine-tanks/src/pages' ""
 
   return (
 <div style={{ backgroundColor: '#EEECE6'}}>
 
-{/* Style block */}
+{/* this is how we understand to put the navbard together - 
+we also cant get it responsive with the mobile "burger"  dropdown menu  */}
+
 <Router>
 <Navbar fixed="top" style={{ backgroundColor: '#F1EDE2' , textAlign: 'center'}}>
     <Navbar.Brand href="/"><Card.Img src= "Images/CellierLogo.png" alt="Logo"></Card.Img>
     </Navbar.Brand>
     <Nav className="mr-auto">
-      <Link href="/winetanks">WINE TANKS</Link>
+      <Nav.Link href="/winetanks">WINE TANKS</Nav.Link>
       <Nav.Link href="/benefits">BENEFITS OF CONCRETE</Nav.Link>
       <Nav.Link href="/about">OUR STORY</Nav.Link>
       <Nav.Link href="/customers">CUSTOMERS</Nav.Link>
@@ -69,26 +77,7 @@ function App() {
         </Switch>
 </Router>
 
-
-
-{/* Navbar fixed="top" style={{ backgroundColor: '#F1EDE2' , textAlign: 'center'}}>
-    <Navbar.Brand href="/"><Card.Img src= "Images/CellierLogo.png" alt="Logo"></Card.Img>
-    </Navbar.Brand>
-    <Nav className="mr-auto">
-      <Nav.Link href="/winetanks">WINE TANKS</Nav.Link>
-      <Nav.Link href="/benefits">BENEFITS OF CONCRETE</Nav.Link>
-      <Nav.Link href="/about">OUR STORY</Nav.Link>
-      <Nav.Link href="/customers">CUSTOMERS</Nav.Link>
-      <Nav.Link href="/contact">CONTACT US</Nav.Link>
-    </Nav>
-    <Form inline>
-      <Button href="#contact" variant="outline-secondary">Request A Quote</Button>
-    </Form>
-  </Navbar>
- */} 
-
-{/* First Image 
-Note: Needs text on image  */}
+{/* this is the first main card image overlay with text - we cannot keep text centered when resizing screen */}
 
 <style type="text/css">
     {`
@@ -127,8 +116,7 @@ Note: Needs text on image  */}
   <br></br>
 
 
-{/* Second Div with William's quote 
-Note: need to center text */}
+{/* this is the second card - it is also not responsive for some reason */}
 
 <style type="text/css">
     {`
@@ -155,8 +143,7 @@ Note: need to center text */}
       </Card>
       <br></br>
 
-{/* Third part with concrete back 
-Note: need text on image */}
+{/* This is the third card with the green concrete image, we struggled to place everything and cant keep it responsive */}
 
 
 
@@ -191,8 +178,7 @@ Note: need text on image */}
 
 
 
-{/* Last part with image left and text right 
-Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
+{/* same here with the image and text, Henk tried to use Col and Row with us but we are struggling badly */}
 
 
 <Card style={{ backgroundColor: '#EEECE6', borderColor: '#EEECE6'}}>
