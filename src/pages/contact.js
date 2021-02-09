@@ -6,48 +6,21 @@ import Form from "react-bootstrap/Form";
 import Container from 'react-bootstrap/Container'
 import { Row } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
-import {Formik} from 'formik';
-import { useList } from "react-firebase-hooks/database";
-import DataService from "../services/Services";
+import emailjs from 'emailjs-com';
+
 function ContactUs() {
 
+function Submit(e) {
+  e.preventDefault();
 
-  const AddTutorial = () => {
-    const initialTutorialState = {
-      title: "",
-      description: "",
-      published: false
-    };
-    const [tutorial, setTutorial] = useState(initialTutorialState);
-    const [submitted, setSubmitted] = useState(false);
-  
-    const handleInputChange = event => {
-      const { name, value } = event.target;
-      setTutorial({ ...tutorial, [name]: value });
-    };
-  
-    const saveTutorial = () => {
-      var data = {
-        title: tutorial.title,
-        description: tutorial.description,
-        published: false
-      };
-  
-      TutorialDataService.create(data)
-        .then(() => {
-          setSubmitted(true);
-        })
-        .catch(e => {
-          console.log(e);
-        });
-    };
-  
-    const newTutorial = () => {
-      setTutorial(initialTutorialState);
-      setSubmitted(false);
-    };
-  
-  }
+  emailjs.sendForm('gmail', 'template_igmyyfo', e.target, 'user_cG88QYkxxnCsjy4ph99gB')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+}
+
 
   return (
     <div style={{ backgroundColor: "#EEECE6" }}>
@@ -62,13 +35,13 @@ function ContactUs() {
 </Col>
 
 <Col>
-<Form>
+<Form onSubmit = {Submit}>
   <Form.Row>
-    <Form.Group as={Col} controlId="formGridFirstName" value = "1">
+    <Form.Group as={Col} controlId="formGridFirstName" value = "1" name = "FirstName">
       <Form.Label>FIRST NAME</Form.Label>
       <Form.Control placeholder="" />
     </Form.Group>
-<Form.Group as={Col} controlId="formGridLastName">
+<Form.Group as={Col} controlId="formGridLastName" name = "LastName">
       <Form.Label>LAST NAME</Form.Label>
       <Form.Control placeholder="" />
     </Form.Group>
@@ -89,7 +62,7 @@ function ContactUs() {
 
 <Col>
 
-<Form.Group as={Col} controlId="formGridCountry">
+<Form.Group as={Col} controlId="formGridCountry" name =  "Country">
       <Form.Label>Country</Form.Label>
       <Form.Control as="select" defaultValue="Choose...">
         <option>South Africa</option>
@@ -117,7 +90,7 @@ function ContactUs() {
 </Card>
 </Col>
 <Col>
-    <Form.Group as={Col} controlId="formGridEmail">
+    <Form.Group as={Col} controlId="formGridEmail" name =  "Email">
       <Form.Label>Email</Form.Label>
       <Form.Control type="email" placeholder="Enter email" />
     </Form.Group>
@@ -131,7 +104,7 @@ function ContactUs() {
 <Col></Col>
 <Col>
 
-<Form.Group controlId="formGridSubject">
+<Form.Group controlId="formGridSubject" name =  "Subject">
     <Form.Label>Subject</Form.Label>
     <Form.Control placeholder="" />
   </Form.Group>
@@ -144,13 +117,13 @@ function ContactUs() {
 <Col></Col>
 
 <Col>
-<Form.Group controlId="formGridMessage">
+<Form.Group controlId="formGridMessage" name =  "Message">
     <Form.Label>Message</Form.Label>
     <Form.Control placeholder="" />
   </Form.Group>
 
-  <Button variant="light" 
-  onClick={newTutorial}
+  <Button variant="light"
+  onClick = {Submit} 
   >Submit</Button>
   </Col>
 </Row>
@@ -164,6 +137,5 @@ function ContactUs() {
   );
 }
 
-export default { ContactUs,
+export default  ContactUs;
 
-};

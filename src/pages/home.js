@@ -49,7 +49,7 @@ function Home() {
   </Row>
 
 
-{/* this is the second card - it is also not responsive for some reason */}
+
 
 <style type="text/css">
     {`
@@ -74,7 +74,7 @@ function Home() {
       </Card>
       <br></br>
 </Row>
-{/* This is the third card with the green concrete image, we struggled to place everything and cant keep it responsive */}
+
 
 
 <Row lg={2} xs={1}>
@@ -126,8 +126,6 @@ function Home() {
 </Row>
 
 
-
-{/* same here with the image and text, Henk tried to use Col and Row with us but we are struggling badly */}
 
 
 <Card style={{ backgroundColor: '#EEECE6', borderColor: '#EEECE6'}}>
