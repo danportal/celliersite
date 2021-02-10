@@ -28,22 +28,27 @@ function App() {
       {/* this is how we understand to put the navbard together - 
 we also cant get it responsive with the mobile "burger"  dropdown menu  */}
 
+
+<Container fluid style = {{backgroundColor : "#103326"}}>
       <Router>
-        <Navbar
-          fixed="top"
-          style={{ backgroundColor: "#103326", textAlign: "center",  }}
-        >
+
+
+
+          <Navbar collapseOnSelect expand="lg"  fixed="top" 
+          style={{ backgroundColor: "#103326", textAlign: "center",  }}>
           <Navbar.Brand href="/">
             <Card.Img src="Images/CellierLogo.png" alt="Logo"></Card.Img>
           </Navbar.Brand>
-          <Nav className="mr-auto">
-            <Nav.Link href="/winetanks" style = {{color : "white"}}>WINE TANKS</Nav.Link>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" style = {{borderColor : "white" , backgroundColor : "white"}}/>
+  <Navbar.Collapse id="responsive-navbar-nav" >
+    <Nav>
+    <Nav.Link href="/winetanks" style = {{color : "white"}}>WINE TANKS</Nav.Link>
             <Nav.Link href="/benefits" style = {{color : "white"}}>BENEFITS OF CONCRETE</Nav.Link>
             <Nav.Link href="/about" style = {{color : "white"}}>OUR STORY</Nav.Link>
             <Nav.Link href="/customers" style = {{color : "white"}}>CUSTOMERS</Nav.Link>
             <Nav.Link href="/contact" style = {{color : "white"}}>CONTACT US</Nav.Link>
-          </Nav>
-          <Form inline>
+    </Nav>
+    <Form inline>
             <Button
               href="#contact"
               variant="outline-secondary"
@@ -53,7 +58,9 @@ we also cant get it responsive with the mobile "burger"  dropdown menu  */}
               Request A Quote
             </Button>
           </Form>
-        </Navbar>
+  </Navbar.Collapse>
+</Navbar>
+        
         <Switch>
           <Route path="/winetanks">
             <Winetanks />
@@ -75,8 +82,9 @@ we also cant get it responsive with the mobile "burger"  dropdown menu  */}
           </Route>
         </Switch>
       </Router>
+      </Container>
+      <Container fluid style = {{backgroundColor : "#103326"}}>
 
-<Container fluid style = {{backgroundColor : "#103326"}}>
   <Row xs={1} lg={3}>
 
  <Col>
