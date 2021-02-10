@@ -31,23 +31,24 @@ we also cant get it responsive with the mobile "burger"  dropdown menu  */}
       <Router>
         <Navbar
           fixed="top"
-          style={{ backgroundColor: "#F1EDE2", textAlign: "center" }}
+          style={{ backgroundColor: "#103326", textAlign: "center",  }}
         >
           <Navbar.Brand href="/">
             <Card.Img src="Images/CellierLogo.png" alt="Logo"></Card.Img>
           </Navbar.Brand>
           <Nav className="mr-auto">
-            <Nav.Link href="/winetanks">WINE TANKS</Nav.Link>
-            <Nav.Link href="/benefits">BENEFITS OF CONCRETE</Nav.Link>
-            <Nav.Link href="/about">OUR STORY</Nav.Link>
-            <Nav.Link href="/customers">CUSTOMERS</Nav.Link>
-            <Nav.Link href="/contact">CONTACT US</Nav.Link>
+            <Nav.Link href="/winetanks" style = {{color : "white"}}>WINE TANKS</Nav.Link>
+            <Nav.Link href="/benefits" style = {{color : "white"}}>BENEFITS OF CONCRETE</Nav.Link>
+            <Nav.Link href="/about" style = {{color : "white"}}>OUR STORY</Nav.Link>
+            <Nav.Link href="/customers" style = {{color : "white"}}>CUSTOMERS</Nav.Link>
+            <Nav.Link href="/contact" style = {{color : "white"}}>CONTACT US</Nav.Link>
           </Nav>
           <Form inline>
             <Button
               href="#contact"
               variant="outline-secondary"
               onClick={requestAQuoteClicked}
+              style = {{color : "white"}}
             >
               Request A Quote
             </Button>
@@ -81,7 +82,7 @@ we also cant get it responsive with the mobile "burger"  dropdown menu  */}
  <Col>
  <br></br>
 <Card style={{ textAlign : "center", backgroundColor : "#103326", color : "white" , borderColor: '#103326',}} >
-<Card.Text >CONTACT</Card.Text>
+<Card.Text style = {{fontSize : "1.2rem"}}>CONTACT</Card.Text>
 
 
 
@@ -111,11 +112,11 @@ we also cant get it responsive with the mobile "burger"  dropdown menu  */}
 
 <Row style={{ textAlign : "center",}}>
   <Col>
-<a href="#">
+<a href="https://www.facebook.com/cellierwinetanks/">
   <Image src="Images/FaceBookLogo.png" className="githubIcon" rounded style = {{  marginLeft: "auto", marginRight: "auto", width : "2em" , height : "2em"}} />
 </a>
 
-<a href="#">
+<a href="https://www.instagram.com/cellierwinetanks/?hl=en">
   <Image src="Images/InstaLogo.jpg" className="githubIcon" rounded style = {{  marginLeft: "auto", marginRight: "auto", width : "2em" , height : "2em"}} />
 </a>
 

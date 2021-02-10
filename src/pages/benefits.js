@@ -69,7 +69,7 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
 
 <div className="embed-responsive embed-responsive-16by9">
   <iframe title="embedsPage" className="embed-responsive-item" src="Images/WebVid.mp4"
-    allowfullscreen style = {{width : "20em"}}></iframe>
+     style = {{width : "20em"}}></iframe>
 </div>
 
 
@@ -87,9 +87,9 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
 
 <Card.Body>
 
-<Card.Title>WHY CONCRETE?</Card.Title>
+<Card.Title style = {{fontSize : "1rem",color : "red",}}>WHY CONCRETE?</Card.Title>
 <br></br>
-<Card.Subtitle>BENEFITS OF CONCRETE WINEMAKING</Card.Subtitle>
+<Card.Subtitle style = {{fontSize : "1,5rem"}}>BENEFITS OF CONCRETE WINEMAKING</Card.Subtitle>
 <br></br>
 
 <Card.Text>

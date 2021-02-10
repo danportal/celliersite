@@ -44,17 +44,17 @@ Note: need text on image */}
       {/* Last part with image left and text right 
 Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
 
-<Container fluid style={{padding: "10em",}}>
+<Container fluid  className = "ml-3 ml-lg-0" style = {{textAlign : "center"}}>
 
-<Row>
+<Row  style = {{paddingTop : "5rem", paddingBottom : "3rem",}}>
 
 <Row lg={2} xs={1}>
-<Col>
+<Col style = {{textAlign : "center"}}>
     
 <Image src="Images/AboutPhoto.jpg" thumbnail 
 width="65%"
 height="65%"
-style = {{padding : "0em" , marginLeft : "15em", marginTop: "4em"}}
+style = {{padding : "0em" , marginTop: "4rem", }}
 />
 
 </Col>
@@ -88,22 +88,22 @@ Over the next 4 years, working prototypes were continually tested, redesigned an
 </Row>
 
 </Row>
-</Container>
 
 
 
-<Row style = {{}}> 
+
+<Row> 
 <Card style={{
   fontFamily: "montserrat",
   backgroundColor: "#EEECE6",
   borderColor: "#F1EDE2", textAlign : "center", }}>
 <Card.Img src="Images/ourstory bckgr miage overlay_2.jpg" alt="Card image"/>
 <Card.ImgOverlay>
-  <Row style = {{ color : "red", padding : "3em", textAlign : "center",}}>
+  <Row style = {{ color : "red", padding : "3rem", textAlign : "center",}}>
    <Col><Card.Title ><h6>THE VISION</h6></Card.Title> </Col> 
     </Row>
     <Row>
-    <Card.Text style = {{padding : "3em", color : "white",}}>
+    <Card.Text style = {{padding : "3rem", color : "white",}}>
     <h3>Cellier's driving force is simple - to create elegant, innovative,
     world class concrete wine tanks that give winemakers the control to
     craft their masterpieces - with less intervention. </h3>
@@ -115,10 +115,7 @@ Over the next 4 years, working prototypes were continually tested, redesigned an
 </Card>
 </Row>
 
-
-
-<Container fluid style={{padding: "10em",}}>
-<Row lg={2} xs={1} style ={{paddingTop : "3em"}} >
+<Row lg={2} xs={1} style ={{paddingTop : "3rem"}} >
 
 
 <Col>
@@ -126,14 +123,14 @@ Over the next 4 years, working prototypes were continually tested, redesigned an
   fontFamily: "montserrat",
   backgroundColor: "#EEECE6",
   borderColor: "#F1EDE2",
-  padding: "5em",
+
 }}>
 
 <Card.Body>
 
-<Card.Title style = {{ color : "red", fontSize : "0.9em",}}>THE ETHOS</Card.Title>
-<br></br>
-<Card.Subtitle style = {{fontSize : "2em"}}><b>WHAT WE ARE ALL ABOUT</b></Card.Subtitle>
+<Card.Title style = {{ color : "red", fontSize : "0.9rem",}}>THE ETHOS</Card.Title>
+
+<Card.Subtitle style = {{fontSize : "2rem"}}><b>WHAT WE ARE ALL ABOUT</b></Card.Subtitle>
 <br></br>
 <Card.Text>
 
@@ -152,9 +149,9 @@ Family is everything. We build close business relationships based on transparenc
 </Card>
 </Col>
 
-<Col>
+<Col style = {{textAlign : "center"}}>
 <Image src="Images/AboutTank.jpg" thumbnail 
-style = {{padding : "0em" , marginLeft : "0em", marginTop : "5em" , width : "50%"}}
+style = {{padding : "0rem" , marginLeft : "0rem", marginTop : "1rem" , width : "50%"}}
 />
 
 </Col>
@@ -162,9 +159,9 @@ style = {{padding : "0em" , marginLeft : "0em", marginTop : "5em" , width : "50%
 </Row>
 
 <Row lg={2} xs={1}>
-<Col>
+<Col style = {{textAlign : "center"}}>
 <Image src="Images/Sigil.jpg" thumbnail 
-style = {{padding : "0em" , marginLeft : "0em", marginTop : "5em" ,  width : "50%"}}
+style = {{padding : "0rem" , marginLeft : "0rem", marginTop : "5rem" ,  width : "50%", }}
 />
 
 </Col>
@@ -174,14 +171,14 @@ style = {{padding : "0em" , marginLeft : "0em", marginTop : "5em" ,  width : "50
   fontFamily: "montserrat",
   backgroundColor: "#EEECE6",
   borderColor: "#F1EDE2",
-  padding: "5em",
+
 }}>
 
 <Card.Body>
 
-<Card.Title style = {{ color : "red",fontSize : "0.9em",}}><h7>THE CELLIER NAME</h7></Card.Title>
+<Card.Title style = {{ color : "red",fontSize : "0.9rem", marginTop : "3rem",}}><h7>THE CELLIER NAME</h7></Card.Title>
 <br></br>
-<Card.Subtitle style = {{fontSize : "2em"}}><b>THE HISTORY OF OUR NAME</b></Card.Subtitle>
+<Card.Subtitle style = {{fontSize : "2rem"}}><b>THE HISTORY OF OUR NAME</b></Card.Subtitle>
 <br></br>
 <Card.Text>
 

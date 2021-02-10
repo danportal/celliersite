@@ -14,13 +14,13 @@ function Winetanks() {
   return (
     <div>
 
-<Container fluid style={{padding: "10em" , textAlign: 'center',}}>
+<Container fluid style={{textAlign: 'center', paddingTop : "9rem",}} className = "ml-3 ml-lg-0">
 <Row lg={2} xs={1}>
 <Col>
 <Image src="Images/ImageBollow.jpg" thumbnail 
 style = {{padding : "0em" , marginLeft : "0em", marginTop : "0em"}}
-width="70%"
-height="70%"/>
+width="60%"
+height="0%"/>
 
 </Col>
 
@@ -29,15 +29,15 @@ height="70%"/>
   fontFamily: "montserrat",
   backgroundColor: "#EEECE6",
   borderColor: "#F1EDE2",
-  padding: "3em",
+  padding: "1rem",
   
 }}>
 
 <Card.Body>
 
-<Card.Title>OUR WINE TANKS</Card.Title>
-<br></br>
-<Card.Subtitle>CONCRETE EGGS</Card.Subtitle>
+<Card.Title style = {{ fontSize : "1rem", color : "red"}}>OUR WINE TANKS</Card.Title>
+
+<Card.Subtitle style = {{ paddingBottom : "1rem",fontSize : "2rem"}}>CONCRETE EGGS</Card.Subtitle>
 <Card.Text>
 Inspired by the materials of ancient winemaking vessels and the miracle of nature's finest design, egg-shaped concrete tanks are fast being an essential tool for all winemakers. Devoid of corners the ovoid shape creates natural, continuous and temperature stable convection currents keeping lees suspended in a homogenous liquid with the majority of cap being submerged in the narrowed top. This allows winemakers to express their wines' unique character with less intervention, developing amazing flavour, colour and mouthfeel. 
 </Card.Text>

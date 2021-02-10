@@ -24,16 +24,26 @@ function Home() {
     `}
   </style>
 
+  <style type="text/css">
+    {`
+    .centered {
+      position: 
+      absolute;
+      transform: translate(-50%, -50%);
+    }
+    `}
+  </style>
+
 <Container fluid>
-<Row>
+<Row >
 <Card>
   <Card.Img src= "Images/ImageAboveNew.jpg" alt="Card image"/>
-    <Card.ImgOverlay style={{ position: "absolute",top:"35%",Left:"50%"}} >
-      <Card.Body>
+    <Card.ImgOverlay>
+      <Card.Body className= "centered">
         <Card.Title className="text-white" >
-        <h1 style={{ fontSize: '5rem', fontFamily: 'Montserrat', textAlign: 'center'}}> FUNCTIONAL ELEGANCE</h1>
+        <h1 style={{ fontSize: '5rem', fontFamily: 'Montserrat', textAlign: 'center',}}> FUNCTIONAL ELEGANCE</h1>
         </Card.Title>
-          <Card.Subtitle style={{ fontSize: '2em', fontFamily: 'Montserrat', textAlign: 'center', color: "white"}}>
+          <Card.Subtitle style={{ fontSize: '2rem', fontFamily: 'Montserrat', textAlign: 'center', color: "white"}}>
           <Row className="justify-content-center" >
               Manufacturer of Premium Concrete Wine Tanks
           </Row>
@@ -51,20 +61,12 @@ function Home() {
 
 
 
-<style type="text/css">
-    {`
-    .centered {
-      position: 
-      absolute;
-      transform: translate(-50%, -50%);
-    }
-    `}
-  </style>
+
 <Row>
       <Card className="card" style={{ backgroundColor: '#EEECE6', borderColor: '#F1EDE2'}}>
         <Card.Body>
           <Card.Text class="text-body">
-            <Row  style={{ fontSize: '2em', fontFamily: 'Montserrat, sans-serif'}} >
+            <Row  style={{ fontSize: '2rem', fontFamily: 'Montserrat, sans-serif'}} >
             <Col style = {{textAlign : "center"}}> <h3 style={{padding: "1rem",}}>"Winemakers are artisans who deserve exceptional vessels that enable 
               their wines to express their full potential without any distraction"</h3>
               <h4>- William Souter, Co-Founder </h4> </Col> 
@@ -79,7 +81,7 @@ function Home() {
 
 <Row lg={2} xs={1}>
   
-<Col style={{ padding : "0em", fontFamily:'montserrat', textAlign: 'center', }}>
+<Col style={{ padding : "0rem", fontFamily:'montserrat', textAlign: 'center', }}>
 
 <Card>
 
@@ -98,18 +100,18 @@ function Home() {
 
 </Card>
 </Col>
-<Col style={{padding : "0em", fontFamily:'montserrat', textAlign: 'center',  }}>
+<Col style={{padding : "0rem", fontFamily:'montserrat', textAlign: 'center',  }}>
 <Card>
 <Card.Img  src= "Images/ConcreteBackCrop.jpg" alt="Card image"/>
   <Card.ImgOverlay>
 
- <Card.Text className="text-white" style={{fontSize: '2rem', fontFamily:'montserrat', textAlign: 'center', }}>
+ <Card.Text className="mr-auto" style={{fontSize: '2rem', fontFamily:'montserrat', textAlign: 'center', color : "white"}}>
       Concrete vessels are completely neutral which <br></br>
       allows wines to express their unique identity <br></br>
       by showcasing their purity and terroir. <br></br>
 </Card.Text>
 
-<Card.Link class="text-white" style={{ textDecoration: "underline", fontSize: '2rem', fontFamily: 'montserrat', textAlign: 'right', }} href="/benefits">
+<Card.Link style={{ textDecoration: "underline", fontSize: '2rem', fontFamily: 'montserrat', textAlign: 'right', color : "white" }} href="/benefits">
       
       <b>DISCOVER THE BENEFITS</b>
 
@@ -124,12 +126,13 @@ function Home() {
 
 
 </Row>
+</Container>
 
-
+<Container>
 
 
 <Card style={{ backgroundColor: '#EEECE6', borderColor: '#EEECE6'}}>
-    <Row style={{padding: "4em" , textAlign: 'center', }}  xs={1} lg={2}>
+    <Row xs={1} lg={2} style={{padding: "4rem" , textAlign: 'center', }}  >
     <Col>
   <Image src="Images/ImageBollow.jpg" rounded 
 width="50%"
@@ -139,25 +142,29 @@ height="80%"/>
   
 
 
-<Col>
 
-      <Card style={{ fontFamily: 'montserrat', backgroundColor: '#EEECE6', borderColor: '#F1EDE2', padding: "2em"}}  class="text-body">
 
-        <Card.Title style={{ fontSize: '3rem', fontFamily: 'montserrat',}}>
-        <b>OUR TANKS</b>
+<Col style = {{textAlign : "center"}}>
+
+      <Card style={{ fontFamily: 'montserrat', backgroundColor: '#EEECE6', borderColor: '#F1EDE2', padding: "2rem"}}  class="text-body">
+
+        <Card.Title style={{  fontFamily: 'montserrat',}}>
+      <b>OUR TANKS</b>
         </Card.Title>
-          <Card.Body style={{ fontSize: '1.3rem', fontFamily: 'montserrat',}}>
+          <Card.Body style={{ fontSize: '1.3rem', fontFamily: 'montserrat',textAlign : "center",}}>
           We have made it our mission to produce premium wine tanks 
           that stand out from the rest. The result? Wine tanks that are 
           unique in construction, discerning in functionality and 
           unparallelled in beauty
           </Card.Body>
-          <Button href="/winetanks" variant="outline-secondary" >FIND OUT MORE</Button>
+   
       </Card>
-
-     
-      
+<Col>
+<Button style = {{width : "30%" ,}} href="/winetanks" variant="outline-secondary" >FIND OUT MORE</Button>
 </Col>
+</Col>
+
+
 
       </Row>
 </Card>
@@ -168,14 +175,14 @@ height="80%"/>
   <br></br>
       <Card.Body style={{ backgroundColor: '#EEECE6'}}>
       <Row>
-      <Col  style = {{textAlign : "center", paddingBottom : "3em"}}> <Card.Title class="text-body" style={{ fontSize: '2.2rem', fontFamily: 'montserrat', textAlign: 'center', position: "absolute",top:"-20%",left:"32%"}}>
+      <Col  style = {{textAlign : "center", paddingBottom : "3rem"}}> <Card.Title style={{ fontSize: '2.2rem', fontFamily: 'montserrat', textAlign: 'center',}}>
         Customise your tank's finish, <br></br>features, fittings and more!
         </Card.Title> </Col>
         <br></br>
       </Row> 
       <br></br>
       <Row>
-     <Col style = {{textAlign : "center", paddingTop : "3em"}}> <Button variant="outline-secondary">ENQUIRE NOW</Button> </Col>
+     <Col style = {{textAlign : "center",}}> <Button variant="outline-secondary">ENQUIRE NOW</Button> </Col>
       </Row>
       <br></br>
       </Card.Body>
