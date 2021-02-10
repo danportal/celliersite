@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container'
 import { Row } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 import emailjs from 'emailjs-com';
+import CountrySelect from 'react-bootstrap-country-select';
 
 function ContactUs() {
 
@@ -23,11 +24,13 @@ e.target.reset()
 }
 
 
+
+
   return (
-    <div style={{ backgroundColor: "#EEECE6" }}>
+ 
     
-<Container fluid style={{fontFamily: "montserrat", padding: "10em",}}>
-<Row lg={2} xs={1} style = {{padding : "5em"}}>
+<Container fluid style={{fontFamily: "montserrat", backgroundColor: "#EEECE6", paddingTop : "5rem"}} className = "ml-3 ml-lg-0">
+<Row lg={3} xs={1} style = {{padding : "5em"}}>
 <Col>
 <Col>
 <Card style={{backgroundColor: "#EEECE6", borderColor: '#EEECE6',}}>
@@ -56,56 +59,61 @@ e.target.reset()
 
 <Col>
 <div>
-            <div className="container">
+            <Container fluid className = "ml-1 ml-lg-0" style = {{width : "180%"}}>
             <form onSubmit={Submit}>
                     <div className="row">
                 
                       {/* FirstName */}
-                        <div className="col-8 form-group mx-auto">
+                        <div className="col-7 form-group ">
                         <Form.Label>FIRST NAME</Form.Label>
                         <input type="text" className="form-control" placeholder="" name="FirstName"/>
                         </div>
                         {/* LastName */}
-                        <div className="col-8 form-group pt-2 mx-auto">
+                        <div className="col-7 form-group  ">
                         <Form.Label>LAST NAME</Form.Label>
                         <input type="text" className="form-control" placeholder="" name="LastName"/>
                         </div>
                         {/* Country */}
-                        <div className="col-8 form-group pt-2 mx-auto">
+                        <div className="col-7 form-group">
                         <Form.Label>COUNTRY</Form.Label>
-                            <input type="text" className="form-control" placeholder="" name="Country"/>
+                            
+                        <Form.Control as="select" defaultValue="" name = "Country">
+                        <option>Choose...</option>
+                        <option>...</option>
+                        </Form.Control>
                         </div>
                         {/* Email */}
-                        <div className="col-8 form-group pt-2 mx-auto">
+                        <div className="col-7 form-group  ">
                         <Form.Label>EMAIL</Form.Label>
                             <input type="email" className="form-control" placeholder="" name="Email"></input>
                         </div>
                         {/* SUbject */}
-                        <div className="col-8 form-group pt-2 mx-auto">
+                        <div className="col-7 form-group  ">
                         <Form.Label>SUBJECT</Form.Label>
                             <input type="text" className="form-control" placeholder="" name="Subject"></input>
                         </div>
 
                         {/* Message */}
-                        <div className="col-8 form-group pt-2 mx-auto">
+                        <div className="col-7 form-group ">
                         <Form.Label>MESSAGE</Form.Label>
                             <textarea className="form-control" id="" cols="30" rows="8" placeholder="" name="Message"></textarea>
                         </div>
 
-                        <div className="col-8 pt-3 mx-auto">
-                            <input type="submit" className="btn btn-info" value="Send Message" style = {{color : "#EEECE6"}} ></input>
+                        <div className="col-7 ">
+                            <input type="submit" className="btn" value="Send Message" style = {{color : "black" , borderColor : "black", backgroundColor : "#EEECE6"}} ></input>
                         </div>
                     </div>
                 </form>
-            </div>
+            </Container>
         </div>
     
     </Col>
     </Row>
+
+
+
 </Container>
 
-
-    </div>
   );
 }
 

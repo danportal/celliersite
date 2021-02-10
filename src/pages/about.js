@@ -44,7 +44,7 @@ Note: need text on image */}
       {/* Last part with image left and text right 
 Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
 
-<Container fluid  className = "ml-3 ml-lg-0" style = {{textAlign : "center"}}>
+<Container fluid  className = "ml-3 ml-lg-0" style = {{textAlign : "center",backgroundColor: "#EEECE6",}}>
 
 <Row  style = {{paddingTop : "5rem", paddingBottom : "3rem",}}>
 

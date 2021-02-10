@@ -62,14 +62,14 @@ Note: need text on image */}
       {/* Last part with image left and text right 
 Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
 
-<Container fluid style={{padding: "10em",}}>
+<Container fluid style={{backgroundColor: "#EEECE6"}} className = "ml-3 ml-lg-0">
 
-<Row lg={2} xs={1}>
-<Col>
+<Row lg={2} xs={1}  style = {{paddingTop : "10rem", textAlign : "center"}} >
+<Col >
 
-<div className="embed-responsive embed-responsive-16by9">
+<div className="embed-responsive embed-responsive-16by9" >
   <iframe title="embedsPage" className="embed-responsive-item" src="Images/WebVid.mp4"
-     style = {{width : "20em"}}></iframe>
+     style = {{width : "30%", height : "95%"}}></iframe>
 </div>
 
 

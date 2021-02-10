@@ -14,7 +14,7 @@ function Winetanks() {
   return (
     <div>
 
-<Container fluid style={{textAlign: 'center', paddingTop : "9rem",}} className = "ml-3 ml-lg-0">
+<Container fluid style={{textAlign: 'center', paddingTop : "9rem",backgroundColor: "#EEECE6" }} className = "ml-3 ml-lg-0">
 <Row lg={2} xs={1}>
 <Col>
 <Image src="Images/ImageBollow.jpg" thumbnail 
@@ -94,7 +94,7 @@ Inspired by the materials of ancient winemaking vessels and the miracle of natur
 </Col>
 </Row>
 
-<Table striped bordered hover style={{"borderWidth":"3px", 'borderColor':"black", 'borderStyle':'solid', }}>
+<Table striped bordered hover style={{"borderWidth":"3px", 'borderColor':"black", 'borderStyle':'solid',paddingRight : "2rem" }}>
   <thead>
     <tr>
       <th>Weight:</th>

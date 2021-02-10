@@ -41,9 +41,9 @@ Note: need text on image */}
       {/* Last part with image left and text right 
 Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
 
-<Container fluid style={{padding: "10em",}}>
-<Row lg={2} xs={1}>
-<Col>
+<Container fluid className = "ml-3 ml-lg-0" style = {{textAlign : "center",}}>
+<Row lg={2} xs={1} style = {{paddingTop : "10rem"}}>
+<Col >
 <Image src="Images/FirstCust.jpg" thumbnail 
 width="40%"
 height="40%"/>
@@ -107,7 +107,7 @@ height="40%"
 
 </Row>
 
-<Row lg={2} xs={1}>
+<Row lg={2} xs={1} style = {{paddingBottom : "4rem"}}>
 <Col>
 <Image src="Images/ThirdCust.jpg" thumbnail 
 width="40%"

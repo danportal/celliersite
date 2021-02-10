@@ -34,8 +34,8 @@ function Home() {
     `}
   </style>
 
-<Container fluid>
-<Row >
+<Container fluid className = "ml-3 ml-lg-0" style = {{backgroundColor: "#EEECE6",}}>
+<Row>
 <Card>
   <Card.Img src= "Images/ImageAboveNew.jpg" alt="Card image"/>
     <Card.ImgOverlay>
@@ -105,7 +105,7 @@ function Home() {
 <Card.Img  src= "Images/ConcreteBackCrop.jpg" alt="Card image"/>
   <Card.ImgOverlay>
 
- <Card.Text className="mr-auto" style={{fontSize: '2rem', fontFamily:'montserrat', textAlign: 'center', color : "white"}}>
+ <Card.Text style={{fontSize: '2rem', fontFamily:'montserrat', textAlign: 'center', color : "white"}}>
       Concrete vessels are completely neutral which <br></br>
       allows wines to express their unique identity <br></br>
       by showcasing their purity and terroir. <br></br>
@@ -132,10 +132,10 @@ function Home() {
 
 
 <Card style={{ backgroundColor: '#EEECE6', borderColor: '#EEECE6'}}>
-    <Row xs={1} lg={2} style={{padding: "4rem" , textAlign: 'center', }}  >
+    <Row xs={1} lg={2} style={{padding: "2rem" , textAlign: 'center', paddingTop : "6rem" }}  >
     <Col>
   <Image src="Images/ImageBollow.jpg" rounded 
-width="50%"
+width="70%"
 height="80%"/>
 
 </Col>
@@ -146,7 +146,7 @@ height="80%"/>
 
 <Col style = {{textAlign : "center"}}>
 
-      <Card style={{ fontFamily: 'montserrat', backgroundColor: '#EEECE6', borderColor: '#F1EDE2', padding: "2rem"}}  class="text-body">
+      <Card style={{ fontFamily: 'montserrat', backgroundColor: '#EEECE6', borderColor: '#F1EDE2',}}  class="text-body">
 
         <Card.Title style={{  fontFamily: 'montserrat',}}>
       <b>OUR TANKS</b>
@@ -160,7 +160,7 @@ height="80%"/>
    
       </Card>
 <Col>
-<Button style = {{width : "30%" ,}} href="/winetanks" variant="outline-secondary" >FIND OUT MORE</Button>
+<Button style = {{width : "50%" ,}} href="/winetanks" variant="outline-secondary" >FIND OUT MORE</Button>
 </Col>
 </Col>
 
