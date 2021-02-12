@@ -24,7 +24,17 @@ function App() {
   // Module not found: Can't resolve './pages/Benefits' in '/Users/mac/Client_sites/cellier/cellier-wine-tanks/src/pages' ""
 
   return (
-    <Container fluid style={{ backgroundColor: "#EEECE6", padding: 0, margin: 0, position: 'fixed', height:'100%', overflowY: 'scroll' }}>
+    <Container
+      fluid
+      style={{
+        backgroundColor: "#EEECE6",
+        padding: 0,
+        margin: 0,
+        position: "fixed",
+        height: "100%",
+        overflowY: "scroll",
+      }}
+    >
       <Row>
         <Col xs={12}>
           <Navbar
@@ -114,7 +124,17 @@ function App() {
               </Card.Link>
 
               <Card.Text class="text-white">
-               <hl></hl>
+                <hr
+                  style={{
+                    width: "98vw",
+                    height: "2px",
+                    float: "left",
+                    color: "white",
+                    backgroundColor: "white",
+                    border: "none",
+                    borderBottom: "3px solid black",
+                  }}
+                ></hr>
               </Card.Text>
               <Card.Text class="text-white">
                 PRIVACY POLICY | TERMS AND CONDITIONS
