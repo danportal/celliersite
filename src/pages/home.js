@@ -198,7 +198,7 @@ function Home() {
         </Col>
       </Row>
 
-      <Row style={{paddingTop: "2rem", paddingBottom:"2rem"}}>
+      <Row style={{ paddingTop: "2rem", paddingBottom: "2rem" }}>
         {/* xs=12 means that this column will take up 12 of all 12 available bootstrap columns in the line (full screen), xs is for exstra small size and up. (see here for more info https://react-bootstrap.github.io/layout/grid/) Then when the md size its it makes it 6 of 12 (half the screen) hebnce md={6} */}
         <Col
           xs={12}
@@ -209,10 +209,7 @@ function Home() {
             alignItems: "center",
           }}
         >
-          <Image
-            src="Images/ImageBollowScaled.jpeg"
-            rounded
-          ></Image>
+          <Image src="Images/ImageBollowScaled.jpeg" rounded></Image>
         </Col>
         <Col
           xs={12}
@@ -270,7 +267,7 @@ function Home() {
                 flexDirection: "column",
                 alignItems: "center",
                 textAlign: "center",
-                paddingBottom:"2rem"
+                paddingBottom: "2rem",
               }}
             >
               <Button variant="outline-secondary">ENQUIRE NOW</Button>
