@@ -63,7 +63,7 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
                 borderColor: "#F1EDE2",
                 padding: "5em",
               }}
-              class="text-body"
+              className="text-body"
             >
               <Card.Title
                 style={{

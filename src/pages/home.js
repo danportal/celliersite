@@ -183,7 +183,7 @@ function Home() {
             </div>
             <a
               href="/benefits"
-              class="text-white"
+              className="text-white"
               style={{
                 textDecoration: "underline",
                 fontSize: "2rem",

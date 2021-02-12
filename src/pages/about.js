@@ -62,7 +62,7 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
                 borderColor: "#F1EDE2",
                 padding: "5em",
               }}
-              class="text-body"
+              className="text-body"
             >
               <Card.Title
                 style={{
@@ -101,7 +101,7 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
         <Card.Img src="Images/ConcreteBackCrop.jpg" alt="Card image" />
         <Card.ImgOverlay>
           <Card.Link
-            class="text-white"
+            className="text-white"
             style={{
               textDecoration: "underline",
               fontSize: "2rem",
@@ -153,7 +153,7 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
                 borderColor: "#F1EDE2",
                 padding: "5em",
               }}
-              class="text-body"
+              className="text-body"
             >
               <Card.Title
                 style={{
@@ -208,7 +208,7 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
                 borderColor: "#F1EDE2",
                 padding: "5em",
               }}
-              class="text-body"
+              className="text-body"
             >
               <Card.Title
                 style={{
