@@ -37,14 +37,14 @@ return(
                       {/* FirstName */}
                         <div className="col-7 form-group ">
                         <Form.Label>FIRST NAME</Form.Label>
-                        <input  style = {{borderColor : "black", border : "solid", borderRadius : "0"}} type="text" className="form-control" placeholder="" name="FirstName"/>
+                        <input  style = {{borderColor : "black", border : "solid", borderRadius : "0", backgroundColor : "#EEECE6"}} type="text" className="form-control" placeholder="" name="FirstName"/>
                         </div>
                
               
                         {/* LastName */}
                         <div className="col-7 form-group  ">
                         <Form.Label>LAST NAME</Form.Label>
-                        <input  style = {{borderColor : "black", border : "solid", borderRadius : "0"}} type="text" className="form-control" placeholder="" name="LastName"/>
+                        <input  style = {{borderColor : "black", border : "solid", borderRadius : "0", backgroundColor : "#EEECE6", }} type="text" className="form-control" placeholder="" name="LastName"/>
                         </div>
                 
                 </Row>
@@ -53,7 +53,7 @@ return(
                         <div className="col-7 form-group">
                         <Form.Label>COUNTRY</Form.Label>
                         <Form.Label htmlFor="inlineFormInputGroupUsername" srOnly>Username</Form.Label>
-                        <Form.Control  style = {{borderColor : "black", border : "solid", borderRadius : "0"}} as="select" defaultValue="Choose..." name="Country" >
+                        <Form.Control  style = {{borderColor : "black", border : "solid", borderRadius : "0", backgroundColor : "#EEECE6",}} as="select" defaultValue="Choose..." name="Country" >
     <option style = {{fontSize : "0px", color : "grey"}}>Select your country of residence</option>
     <option>South Africa</option>
      <option>Afghanistan</option>
@@ -304,7 +304,7 @@ return(
                         {/* Email */}
                         <div className="col-7 form-group  ">
                         <Form.Label>EMAIL</Form.Label>
-                            <input  style = {{borderColor : "black", border : "solid", borderRadius : "0"}} type="email" className="form-control" placeholder="" name="Email"></input>
+                            <input  style = {{borderColor : "black", border : "solid", borderRadius : "0", backgroundColor : "#EEECE6"}} type="email" className="form-control" placeholder="" name="Email"></input>
                         </div>
 
                         </Row>
@@ -312,18 +312,18 @@ return(
                         {/* SUbject */}
                         <div className="col-7 form-group  ">
                         <Form.Label>SUBJECT</Form.Label>
-                            <input  style = {{borderColor : "black", border : "solid", borderRadius : "0"}} type="text" className="form-control" placeholder="" name="Subject"></input>
+                            <input  style = {{borderColor : "black", border : "solid", borderRadius : "0", backgroundColor : "#EEECE6"}} type="text" className="form-control" placeholder="" name="Subject"></input>
                         </div>
                         </Row>
                         <Row lg={1} xs={1}>
                         {/* Message */}
                         <div className="col-7 form-group ">
                         <Form.Label>MESSAGE</Form.Label>
-                            <textarea  style = {{borderColor : "black", border : "solid", borderRadius : "0"}} className="form-control" id="" cols="30" rows="8" placeholder="" name="Message"></textarea>
+                            <textarea  style = {{borderColor : "black", border : "solid", borderRadius : "0", backgroundColor : "", backgroundColor : "#EEECE6"}} className="form-control" id="" cols="30" rows="8" placeholder="" name="Message"></textarea>
                         </div>
 
                         <div className="col-7 ">
-                            <input  style = {{borderColor : "black", border : "solid", borderRadius : "0" ,borderWidth : "1px"}}type="submit" className="btn" value="Send Message" style = {{color : "black" , borderColor : "black", backgroundColor : "#EEECE6"}} ></input>
+                            <input  style = {{borderColor : "black", border : "solid", borderRadius : "0" ,borderWidth : "1px", backgroundColor : "#EEECE6"}}type="submit" className="btn" value="Send Message"  ></input>
                         </div>
                         </Row>
                 </form>

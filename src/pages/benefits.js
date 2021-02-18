@@ -58,12 +58,6 @@ Note: need to center text */}
     `}
       </style>
 
-      {/* Third part with concrete back 
-Note: need text on image */}
-
-      {/* Last part with image left and text right 
-Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
-
 <Container style={{backgroundColor: "#EEECE6", textAlign : "left"}} >
 
 <Row lg={2} xs={1}  style = {{paddingTop : "10rem", textAlign : "left"}} >
