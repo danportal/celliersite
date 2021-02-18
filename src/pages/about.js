@@ -54,7 +54,7 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
 <Image src="Images/AboutPhoto.jpg" rounded 
 width="90%"
 height="90%"
-style = {{padding : "0em" , marginTop: "4rem", }}
+style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth : "3px", borderColor : "#EEECE6", padding : "0em" , marginTop: "4rem", }}
 />
 
 </Col>
@@ -138,7 +138,7 @@ Cellier Wine Tanks started in a mountain side garage by owners John and William 
       <br></br>
       </Container>
 
-<Container style = {{textAlign : "center",backgroundColor: "#EEECE6",}}>
+<Container style = {{textAlign : "left",backgroundColor: "#EEECE6",}}>
 <Row lg={2} xs={1} style ={{paddingTop : "3rem"}} >
 
 
@@ -174,8 +174,9 @@ Family is everything. We build close business relationships based on transparenc
 </Col>
 
 <Col style = {{textAlign : "center"}}>
-<Image src="Images/AboutTank.jpg" thumbnail 
-style = {{padding : "0rem" , marginLeft : "0rem", marginTop : "1rem" , width : "75%"}}
+<Image src="Images/AboutTank.jpg" rounded
+
+style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth : "3px", borderColor : "#EEECE6", padding : "0rem" , marginLeft : "0rem", marginTop : "1rem" , width : "75%"}}
 />
 
 </Col>
@@ -185,7 +186,7 @@ style = {{padding : "0rem" , marginLeft : "0rem", marginTop : "1rem" , width : "
 <Row lg={2} xs={1} style = {{paddingBottom : "3rem"}}>
 <Col style = {{textAlign : "center"}}>
 <Image src="Images/Sigil.jpg" thumbnail 
-style = {{padding : "0rem" , marginLeft : "0rem", marginTop : "2rem" ,  width : "70%", }}
+style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth : "3px", borderColor : "#EEECE6",padding : "0rem" , marginLeft : "0rem", marginTop : "2rem" ,  width : "70%",  }}
 />
 
 </Col>

@@ -30,27 +30,27 @@ return(
 
 <Col>
 <div>
-            <Container fluid className = "ml-1 ml-lg-0" style = {{width : "180%", textAlign : "left"}}>
+            <Container fluid className = "ml-1 ml-lg-0" style = {{width : "180%", textAlign : "left", padding : "0rem"}}>
             <form onSubmit={Submit}>
-                    <Row lg={2} xs={1}>
+                    <Row lg={2} xs={1} style = {{padding : "0rem"}}>
                 
                       {/* FirstName */}
-                        <div className="col-7 form-group ">
+                        <div className="col-7 form-group " style = {{paddingLeft : "0rem"}}>
                         <Form.Label>FIRST NAME</Form.Label>
                         <input  style = {{borderColor : "black", border : "solid", borderRadius : "0", backgroundColor : "#EEECE6"}} type="text" className="form-control" placeholder="" name="FirstName"/>
                         </div>
                
               
                         {/* LastName */}
-                        <div className="col-7 form-group  ">
+                        <div className="col-7 form-group  " style = {{paddingLeft : "0rem"}}>
                         <Form.Label>LAST NAME</Form.Label>
                         <input  style = {{borderColor : "black", border : "solid", borderRadius : "0", backgroundColor : "#EEECE6", }} type="text" className="form-control" placeholder="" name="LastName"/>
                         </div>
                 
                 </Row>
-                <Row lg={2} xs={1}>
+                <Row lg={2} xs={1} style ={{ paddingLeft : "0rem", paddingRight : "0rem" , }}>
                         {/* Country */}
-                        <div className="col-7 form-group">
+                        <div className="col-7 form-group" style = {{paddingLeft : "0rem" ,}}>
                         <Form.Label>COUNTRY</Form.Label>
                         <Form.Label htmlFor="inlineFormInputGroupUsername" srOnly>Username</Form.Label>
                         <Form.Control  style = {{borderColor : "black", border : "solid", borderRadius : "0", backgroundColor : "#EEECE6",}} as="select" defaultValue="Choose..." name="Country" >
@@ -302,7 +302,7 @@ return(
                         </div>
 
                         {/* Email */}
-                        <div className="col-7 form-group  ">
+                        <div className="col-7 form-group  " style = {{paddingLeft : "0rem"}}>
                         <Form.Label>EMAIL</Form.Label>
                             <input  style = {{borderColor : "black", border : "solid", borderRadius : "0", backgroundColor : "#EEECE6"}} type="email" className="form-control" placeholder="" name="Email"></input>
                         </div>
@@ -310,20 +310,20 @@ return(
                         </Row>
                         <Row lg={1} xs={1}>
                         {/* SUbject */}
-                        <div className="col-7 form-group  ">
+                        <div className="col-7 form-group  " style = {{paddingLeft : "0rem"}}>
                         <Form.Label>SUBJECT</Form.Label>
                             <input  style = {{borderColor : "black", border : "solid", borderRadius : "0", backgroundColor : "#EEECE6"}} type="text" className="form-control" placeholder="" name="Subject"></input>
                         </div>
                         </Row>
                         <Row lg={1} xs={1}>
                         {/* Message */}
-                        <div className="col-7 form-group ">
+                        <div className="col-7 form-group " style = {{paddingLeft : "0rem"}}>
                         <Form.Label>MESSAGE</Form.Label>
                             <textarea  style = {{borderColor : "black", border : "solid", borderRadius : "0", backgroundColor : "", backgroundColor : "#EEECE6"}} className="form-control" id="" cols="30" rows="8" placeholder="" name="Message"></textarea>
                         </div>
 
-                        <div className="col-7 ">
-                            <input  style = {{borderColor : "black", border : "solid", borderRadius : "0" ,borderWidth : "1px", backgroundColor : "#EEECE6"}}type="submit" className="btn" value="Send Message"  ></input>
+                        <div className="col-7 " style = {{paddingLeft : "0rem"}}>
+                            <input  style = {{borderColor : "black", border : "solid", borderRadius : "0" ,borderWidth : "1px", backgroundColor : "#EEECE6"}}type="submit" className="btn" value="Submit"  ></input>
                         </div>
                         </Row>
                 </form>

@@ -26,6 +26,18 @@ function App() {
   return (
     <div style={{ backgroundColor: "#EEECE6" }}>
 
+      <style type="text/css">
+        {`
+    .centered {
+      position: 
+      absolute;
+      top: 50%;
+      
+      transform: translate(-50%, -50%);
+      
+    }
+    `}
+      </style>
 
 <Container fluid  style = {{        backgroundColor: "#EEECE6",
         padding: 0,
@@ -96,13 +108,13 @@ function App() {
 
   <Col xs= {12}>
  <br></br>
-<Card style={{ textAlign : "center", backgroundColor : "#103326", color : "white" , borderColor: '#103326',}} >
-<Card.Text style = {{fontSize : "1.2rem"}}>CONTACT</Card.Text>
+<Card style={{ textAlign : "center", backgroundColor : "#103326", color : "white" , borderColor: '#103326', paddingLeft : "6rem"}} >
+<Card.Text style = {{fontSize : "1.2rem" , textAlign : "left"}} >CONTACT</Card.Text>
 
 
 
-<Card.Text>+27 78 627 7978</Card.Text>
-<Card.Link href="#">sales@cellierwinetanks.com </Card.Link>
+<Card.Text   style = {{textAlign : "left"}}  >+27 78 627 7978</Card.Text>
+<Card.Link href="#"  style = {{ textAlign : "left"}} >sales@cellierwinetanks.com </Card.Link>
 
 </Card >
 </Col >

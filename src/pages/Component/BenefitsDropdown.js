@@ -48,8 +48,8 @@ return(
 
 
 
-<Accordion>
- <Card style = {{textAlign : "center",}}>
+<Accordion style = {{textAlign : "left",}}>
+ <Card >
 <Accordion.Toggle onClick ={ () => setIsOpen1(!isOpen1)} as={Card.Header} eventKey="0" style = {{ backgroundColor: '#EEECE6', textAlign : "left", borderBottom : "solid" , borderBottomColor : "black"}}>
   <b> <p  className = "alignleft" style = {{paddingTop : "1rem"}}>AUTONOUS CONTROL</p></b>  <p style = {{fontSize : "2rem",}} className = "alignright"><div>{ isOpen1 ? 'x' : "+"}</div></p> 
     </Accordion.Toggle>
@@ -60,7 +60,7 @@ return(
       </Card.Body>
     </Accordion.Collapse>
   </Card>
- <Card style = {{textAlign : "center",}}>
+ <Card>
    <Accordion.Toggle onClick ={ () => setIsOpen2(!isOpen2)} as={Card.Header} eventKey="1" style = {{ backgroundColor: '#EEECE6', textAlign : "left", borderBottom : "solid" , borderBottomColor : "black"}}>
   <b><p  className = "alignleft" style = {{paddingTop : "1rem"}}>NEUTALITY</p></b>  <p style = {{fontSize : "2rem"}} className = "alignright"><div>{ isOpen2 ? 'x' : "+"}</div></p>
     </Accordion.Toggle> 
@@ -70,7 +70,7 @@ return(
       </Card.Body>
     </Accordion.Collapse>
   </Card>
-<Card style = {{textAlign : "center",}}>
+<Card>
    <Accordion.Toggle onClick ={ () => setIsOpen3(!isOpen3)}  as={Card.Header} eventKey="2" style = {{ backgroundColor: '#EEECE6', textAlign : "left", borderBottom : "solid" , borderBottomColor : "black"}}>
    <b> <p  className = "alignleft" style = {{paddingTop : "1rem"}}>MICRO OXYGENATION</p></b>  <p style = {{fontSize : "2rem"}} className = "alignright"><div>{ isOpen3 ? 'x' : "+"}</div></p>
     </Accordion.Toggle>

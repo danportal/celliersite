@@ -45,7 +45,7 @@ function Winetanks() {
 <Row lg={2} xs={1}>
 <Col style = {{textAlign : "center"}}>
 <Image src="Images/ImageBollow.jpg" thumbnail 
-style = {{padding : "0em" , marginLeft : "0em", marginTop : "0em", }}
+style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth : "3px", borderColor : "#EEECE6", padding : "0em" , marginLeft : "0em", marginTop : "0em", }}
 width="60%"/>
 
 </Col>

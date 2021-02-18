@@ -45,6 +45,7 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
 <Row lg={2} xs={1} style = {{paddingTop : "10rem"}}>
 <Col style = {{textAlign : "center", paddingTop : "4rem"}}>
 <Image src="Images/FirstCust.jpg" rounded 
+style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth : "3px", borderColor : "#EEECE6", }}
 width="80%"
 />
 
@@ -109,6 +110,7 @@ Mphumi, alongside Warwick Denman, acquired Cellier’s first five prototype conc
 
 <Col style = {{textAlign : "center", paddingTop : "6rem"}}>
 <Image src="Images/SecondCust.jpg" rounded  
+style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth : "3px", borderColor : "#EEECE6", }}
 width="80%"
 
 />
@@ -117,9 +119,10 @@ width="80%"
 
 </Row>
 
-<Row lg={2} xs={1} style = {{paddingBottom : "4rem", paddingTop : "4rem"}}>
+<Row lg={2} xs={1} style = {{paddingBottom : "4rem", paddingTop : "4rem" , }}>
 <Col style = {{textAlign : "center", paddingTop : "4rem"}}>
 <Image src="Images/ThirdCust.jpg" rounded  
+style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth : "3px", borderColor : "#EEECE6", }}
 width="80%"
 />
 

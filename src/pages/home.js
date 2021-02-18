@@ -217,12 +217,12 @@ function Home() {
       <Container>
 <Card style={{ backgroundColor: '#EEECE6', borderColor: '#EEECE6'}}>
 
-    <Row xs={1} lg={2} style={{padding: "2rem" , textAlign: 'center', paddingTop : "6rem" }}  >
+    <Row xs={1} lg={2}  style={{padding: "2rem" , textAlign: 'center', paddingTop : "6rem"}} >
     <Col>
   <Image  src="Images/ImageBollow.jpg" rounded 
 width="70%"
+style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth : "3px", borderColor : "#EEECE6",  }}
 />
-
 </Col>
 
 

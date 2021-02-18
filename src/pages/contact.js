@@ -26,7 +26,7 @@ function ContactUs() {
 </Col>
 
 <Col>
-<Card style={{ backgroundColor: "#EEECE6", borderColor: '#EEECE6',}}>
+<Card style={{ backgroundColor: "#EEECE6", borderColor: '#EEECE6', paddingTop : "2rem"}}>
 <Card.Title><b>Email</b> </Card.Title>  
 <Card.Text>Sales@cellierwinetanks.com</Card.Text>
 </Card>
@@ -36,7 +36,7 @@ function ContactUs() {
 
 
 <Col>
-<Card style={{ backgroundColor: "#EEECE6", borderColor: '#EEECE6',paddingBottom : "5rem" }}>
+<Card style={{ backgroundColor: "#EEECE6", borderColor: '#EEECE6',paddingBottom : "5rem", paddingTop : "2rem" }}>
 <Card.Title><b>Phone</b></Card.Title>  
 <Card.Text>+27 78 627 7978</Card.Text>
 </Card>
