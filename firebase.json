@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site" : "cellierwinetanks-d097a",
     "public": "build",
     "ignore": [
       "firebase.json",

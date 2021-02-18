@@ -25,31 +25,33 @@ function App() {
 
   return (
     <div style={{ backgroundColor: "#EEECE6" }}>
-      {/* this is how we understand to put the navbard together - 
-we also cant get it responsive with the mobile "burger"  dropdown menu  */}
 
 
-<Container fluid style = {{backgroundColor : "#103326"}}>
-      <Router>
+<Container fluid  style = {{        backgroundColor: "#EEECE6",
+        padding: 0,
+        margin: 0,
+        position: "fixed",
+        height: "100%",
+        overflowY: "scroll",}}>
 
-
-
+<Row>
+<Col xs={12}>
           <Navbar collapseOnSelect expand="lg"  fixed="top" 
-          style={{ backgroundColor: "#103326", textAlign: "center",  }}>
+          style={{ backgroundColor: "#103326",   }}>
           <Navbar.Brand href="/">
             <Card.Img src="Images/CellierLogo.png" alt="Logo"></Card.Img>
           </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" style = {{borderColor : "white" , backgroundColor : "white"}}/>
   <Navbar.Collapse id="responsive-navbar-nav" >
     <Nav>
-    <Nav.Link href="/winetanks" style = {{color : "white"}}>WINE TANKS</Nav.Link>
+    <Nav.Link href="/winetanks" style = {{color : "white",}}>WINE TANKS</Nav.Link>
             <Nav.Link href="/benefits" style = {{color : "white"}}>BENEFITS OF CONCRETE</Nav.Link>
             <Nav.Link href="/about" style = {{color : "white"}}>OUR STORY</Nav.Link>
             <Nav.Link href="/customers" style = {{color : "white"}}>CUSTOMERS</Nav.Link>
             <Nav.Link href="/contact" style = {{color : "white"}}>CONTACT US</Nav.Link>
     </Nav>
-    <Form inline>
-            <Button
+    <Form inline > 
+            <Button 
               href="#contact"
               variant="outline-secondary"
               onClick={requestAQuoteClicked}
@@ -60,7 +62,12 @@ we also cant get it responsive with the mobile "burger"  dropdown menu  */}
           </Form>
   </Navbar.Collapse>
 </Navbar>
-        
+</Col>
+</Row>
+
+<Row>
+<Col xs={12}>
+<Router>
         <Switch>
           <Route path="/winetanks">
             <Winetanks />
@@ -82,12 +89,12 @@ we also cant get it responsive with the mobile "burger"  dropdown menu  */}
           </Route>
         </Switch>
       </Router>
-      </Container>
-      <Container fluid style = {{backgroundColor : "#103326"}}>
+</Col>
+</Row>
 
-  <Row xs={1} lg={3}>
+  <Row xs={1} lg={3} style = {{background : "#103326"}}>
 
- <Col>
+  <Col xs= {12}>
  <br></br>
 <Card style={{ textAlign : "center", backgroundColor : "#103326", color : "white" , borderColor: '#103326',}} >
 <Card.Text style = {{fontSize : "1.2rem"}}>CONTACT</Card.Text>
@@ -118,17 +125,17 @@ we also cant get it responsive with the mobile "burger"  dropdown menu  */}
 <Card.Text>CONNECT</Card.Text>
 <br></br>
 
-<Row style={{ textAlign : "center",}}>
+<Row style={{ textAlign : "center", paddingBottom : "3rem"}}>
   <Col>
-<a href="https://www.facebook.com/cellierwinetanks/">
+<a href="https://www.facebook.com/cellierwinetanks/" target="_blank">
   <Image src="Images/FaceBookLogo.png" className="githubIcon" rounded style = {{  marginLeft: "auto", marginRight: "auto", width : "2em" , height : "2em"}} />
 </a>
 
-<a href="https://www.instagram.com/cellierwinetanks/?hl=en">
+<a href="https://www.instagram.com/cellierwinetanks/?hl=en" target="_blank">
   <Image src="Images/InstaLogo.jpg" className="githubIcon" rounded style = {{  marginLeft: "auto", marginRight: "auto", width : "2em" , height : "2em"}} />
 </a>
 
-<a href="#">
+<a href="https://www.linkedin.com/company/cellierwinetanks/" target="_blank">
   <Image src="Images/LinkInLogo.png" className="githubIcon" rounded  style = {{  marginLeft: "auto", marginRight: "auto", width : "2em" , height : "2em"}} />
 </a>
 </Col>

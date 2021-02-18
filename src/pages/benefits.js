@@ -11,7 +11,9 @@ import Collapse from 'react-bootstrap/Collapse';
 import Fade from 'react-bootstrap/Fade';
 import Button from 'react-bootstrap/Button';
 import Accordion from 'react-bootstrap/Accordion';
-
+import benefitsDropdown from "./Component/BenefitsDropdown";
+import { Component } from "react";
+import BenefitsDropDown from "./Component/BenefitsDropdown";
 
 function Benefits() {
   return (
@@ -62,14 +64,18 @@ Note: need text on image */}
       {/* Last part with image left and text right 
 Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
 
-<Container fluid style={{backgroundColor: "#EEECE6"}} className = "ml-3 ml-lg-0">
+<Container style={{backgroundColor: "#EEECE6", textAlign : "left"}} >
 
-<Row lg={2} xs={1}  style = {{paddingTop : "10rem", textAlign : "center"}} >
-<Col >
+<Row lg={2} xs={1}  style = {{paddingTop : "10rem", textAlign : "left"}} >
+<Col>
 
-<div className="embed-responsive embed-responsive-16by9" >
+<div className="embed-responsive embed-responsive-16by9" style = {{height : "100%"}}>
   <iframe title="embedsPage" className="embed-responsive-item" src="Images/WebVid.mp4"
-     style = {{width : "30%", height : "95%"}}></iframe>
+     style = {{width : "49%", height : "100%",
+     top: "50%",
+     left: "50%",
+     transform: "translate(-50%, -50%)",
+     }}></iframe>
 </div>
 
 
@@ -82,18 +88,18 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
   fontFamily: "montserrat",
   backgroundColor: "#EEECE6",
   borderColor: "#F1EDE2",
-  padding: "2em",
+  padding: "1rem",
 }}>
 
 <Card.Body>
 
-<Card.Title style = {{fontSize : "1rem",color : "red",}}>WHY CONCRETE?</Card.Title>
-<br></br>
-<Card.Subtitle style = {{fontSize : "1,5rem"}}>BENEFITS OF CONCRETE WINEMAKING</Card.Subtitle>
+<Card.Title style = {{fontSize : "15px",color : "red",textAlign : "left"}}>WHY CONCRETE?</Card.Title>
+
+<Card.Subtitle style = {{ textAlign : "left"}}><h3><b>BENEFITS OF CONCRETE WINEMAKING</b></h3></Card.Subtitle>
 <br></br>
 
 <Card.Text>
-The use of cement and clay vessels in their various forms have been used in winemaking for millenia. After losing favour to oak barrels and in modern times stainless steel, winemakers across the world are responding to new trends by increasingly incorporating new age concrete tanks into their cellars. Combining it's own unique properties with the desirable attributes of both wood and stainless steel, concrete hits the sweet spot and the future of winemaking is favouring the reinvented tools of old masters.
+The use of cement and clay vessels in their various forms have been used in winemaking for millennia. After losing favour to oak barrels and in modern times stainless steel, winemakers across the world are responding to new trends by increasingly incorporating new age concrete tanks into their cellars. Combining it’s own unique properties with the desirable attributes of both wood and stainless steel, concerte hits the sweet spot and the future of winemaking is favouring the reinvented tools of the old masters. 
 </Card.Text>
 </Card.Body>
 </Card>
@@ -103,43 +109,9 @@ The use of cement and clay vessels in their various forms have been used in wine
 <Row>
 </Row>
 
-<Row style = {{paddingTop : "3em"}} >
+<Row style = {{paddingTop : "3rem", paddingBottom : "3rem", }} >
   <Col>
-<Accordion>
-  <Card>
-    <Accordion.Toggle as={Card.Header} eventKey="0" style = {{ backgroundColor: '#EEECE6',  borderColor: '#EEECE6', }}>
-      AUTONOUS CONTROL
-    </Accordion.Toggle >
-    <Accordion.Collapse eventKey="0">
-      <Card.Body style = {{ backgroundColor: '#EEECE6',  borderColor: '#EEECE6', }}>Hello! I'm the body</Card.Body>
-    </Accordion.Collapse>
-  </Card>
-  <Card>
-    <Accordion.Toggle as={Card.Header} eventKey="1" style = {{ backgroundColor: '#EEECE6',}}>
-      NEUTRALITY
-    </Accordion.Toggle>
-    <Accordion.Collapse eventKey="1">
-      <Card.Body style = {{ backgroundColor: '#EEECE6',  borderColor: '#EEECE6', }}>Hello! I'm another body</Card.Body>
-    </Accordion.Collapse>
-  </Card>
-  <Card>
-    <Accordion.Toggle as={Card.Header} eventKey="2" style = {{ backgroundColor: '#EEECE6',}}>
-      MICRO OXYGENATION
-    </Accordion.Toggle>
-    <Accordion.Collapse eventKey="2">
-      <Card.Body style = {{ backgroundColor: '#EEECE6',  borderColor: '#EEECE6', }}>Hello! I'm the body</Card.Body>
-    </Accordion.Collapse>
-  </Card>
-  <Card>
-    <Accordion.Toggle as={Card.Header} eventKey="3" style = {{ backgroundColor: '#EEECE6',}}>
-      DURABILITY AND COST EFFECTIVENESS <br></br>
-      
-    </Accordion.Toggle>
-    <Accordion.Collapse eventKey="3">
-      <Card.Body style = {{ backgroundColor: '#EEECE6',  borderColor: '#EEECE6', }}>Hello! I'm the body</Card.Body>
-    </Accordion.Collapse>
-  </Card>
-</Accordion>
+<BenefitsDropDown></BenefitsDropDown>
 </Col>
 </Row>
 
