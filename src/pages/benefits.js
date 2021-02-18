@@ -65,7 +65,7 @@ Note: need to center text */}
 
 <div className="embed-responsive embed-responsive-16by9" style = {{height : "100%"}}>
   <iframe title="embedsPage" className="embed-responsive-item" src="Images/WebVid.mp4"
-     style = {{width : "49%", height : "100%",
+     style = {{width : "45%", height : "99%",
      top: "50%",
      left: "50%",
      transform: "translate(-50%, -50%)",

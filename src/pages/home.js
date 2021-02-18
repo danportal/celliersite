@@ -231,7 +231,7 @@ style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth 
 
 <Col style = {{textAlign : "left"}}>
 
-      <Card style={{ fontFamily: 'montserrat', backgroundColor: '#EEECE6', borderColor: '#F1EDE2',}}  class="text-body">
+      <Card style={{ fontFamily: 'montserrat', backgroundColor: '#EEECE6', borderColor: '#F1EDE2', paddingTop : "5rem"}}  class="text-body">
 
         <Card.Title style={{  fontFamily: 'montserrat', paddingLeft : "0"}}>
       <b>OUR TANKS</b>

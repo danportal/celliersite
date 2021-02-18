@@ -91,7 +91,7 @@ Cellier Wine Tanks started in a mountain side garage by owners John and William 
         <Col
           xs={12}
           style={{
-            height: "300px",
+            height: "550px",
             background:
               "url('Images/ourstory bckgr miage overlay_2.jpg') no-repeat center fixed",
             "background-size": "cover",
@@ -122,14 +122,16 @@ Cellier Wine Tanks started in a mountain side garage by owners John and William 
 
             <div
               style={{
-                fontSize: "1,25rem",
+                fontSize: "2rem",
                 fontFamily: "Montserrat",
                 textAlign: "center",
                 color: "white",
-                
+
               }}
             >
-            Cellier’s driving force is simple - to create elegant, innovative, world class concrete wine tanks that give winemakers the control to craft their masterpieces - with less intervention.             </div>
+            Cellier’s driving force is simple - to create elegant, innovative, 
+            world class concrete wine tanks <br></br>  that give winemakers the control 
+            to craft their masterpieces - with less intervention.             </div>
 
 
           </div>

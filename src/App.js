@@ -46,16 +46,16 @@ function App() {
         height: "100%",
         overflowY: "scroll",}}>
 
-<Row>
-<Col xs={12}>
+<Row xs={12} >
+<Col> 
           <Navbar collapseOnSelect expand="lg"  fixed="top" 
-          style={{ backgroundColor: "#103326",   }}>
+          style={{ backgroundColor: "#103326",  }}>
           <Navbar.Brand href="/">
             <Card.Img src="Images/CellierLogo.png" alt="Logo"></Card.Img>
           </Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" style = {{borderColor : "white" , backgroundColor : "white"}}/>
+  <Navbar.Toggle  aria-controls="responsive-navbar-nav" style = {{borderColor : "white" , backgroundColor : "white" , textAlign : "right"}}/>
   <Navbar.Collapse id="responsive-navbar-nav" >
-    <Nav>
+    <Nav className="ml-auto">
     <Nav.Link href="/winetanks" style = {{color : "white",}}>WINE TANKS</Nav.Link>
             <Nav.Link href="/benefits" style = {{color : "white"}}>BENEFITS OF CONCRETE</Nav.Link>
             <Nav.Link href="/about" style = {{color : "white"}}>OUR STORY</Nav.Link>
@@ -67,7 +67,7 @@ function App() {
               href="#contact"
               variant="outline-secondary"
               onClick={requestAQuoteClicked}
-              style = {{color : "white"}}
+              style = {{color : "white", borderColor : "white", border : "solid", borderRadius : "0" ,borderWidth : "1px",}}
             >
               Request A Quote
             </Button>
