@@ -30,7 +30,7 @@ return (
 <p className = "has-text-left">
 {resultString}
 <span onClick={toggleIsTruncated}>
- {isTruncated ? <ul>Read More</ul> : <ul>Read Less</ul>} </span>
+ {isTruncated ? <b>... Read More</b> : <b>... Read Less</b>} </span>
 </p>
 );
 
@@ -81,7 +81,7 @@ Note: Button needs a dark border  style={{ backgroundColor: '#EEECE6'}} */}
 <Col style = {{textAlign : "center", paddingTop : "0rem"}}>
 <Image src="Images/FirstCust.jpg" rounded 
 style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth : "3px", borderColor : "#EEECE6",paddingTop : "0rem" }}
-width="80%"
+width="50%"
 />
 
 </Col>
@@ -93,15 +93,15 @@ width="80%"
   borderColor: "#F1EDE2",
 }}>
 
-<Card.Body>
+<Card.Body style = {{paddingTop : "0rem"}}>
 
 <Card.Title><b>Miles Mossop</b></Card.Title>
 <Card.Subtitle style ={{color : "red",fontSize: "15px",}}>WINEMAKER</Card.Subtitle>
 <Card.Text style = {{paddingTop : "2rem"}}>
 
-One might say he was born with wine in his DNA. Miles is son of the late Tony Mossop, a Cape Wine Master and distinguished South African wine authority. Alumnus of Wynberg Boys’ High, he obtained a degree in geology which he followed  with a degree in viticulture and oenology at Stellenbosch University graduating top of his class. That set the bar, with Miles beginning his journey into winemaking working under some well renowned winemakers both locally and abroad, quickly gaining world class experience. In 2000 he joined Tokara Wine Estate and over the next two decades, established the estate as one of the top producers in South Africa, winning numerous accolades in the process. In 2012 Miles was inducted into the prestigious Cape Winemakers Guild in time becoming chairman and in May 2018, he left his legacy at Tokara to focus entirely on his solo journey.
-<br></br>
+One might say he was born with wine in his DNA. Miles is son of the late Tony Mossop, a Cape Wine Master and distinguished South African wine authority. Alumnus of Wynberg Boys’ High, he obtained a degree in geology which he followed  with a degree in viticulture and oenology at Stellenbosch University graduating top of his class. That set the bar, with Miles beginning his journey into winemaking working under some well renowned winemakers both locally and abroad, 
 <ReadMore>
+quickly gaining world class experience. In 2000 he joined Tokara Wine Estate and over the next two decades, established the estate as one of the top producers in South Africa, winning numerous accolades in the process. In 2012 Miles was inducted into the prestigious Cape Winemakers Guild in time becoming chairman and in May 2018, he left his legacy at Tokara to focus entirely on his solo journey.
 Miles and his wife established Miles Mossop Wines back in 2004 with the vision to create wines unique in character that express the true nature of South Africa and the sites from which the grapes are sourced. The wines exude finesse and elegance, but still show aspects of power and fruit concentration, having great texture while maintaining balance. In 2020, Tim Atkins rated his 2017 “Sam” an amazing 99 points, with all wines in his range scoring over 91 points.
 Miles took two Cellier concrete eggs at the beginning of 2020 and bottled their maiden vintages, his 2020 Chapter One Cinsault and Chenin Blanc blend, at the end of 2020. Exciting times ahead! 
 </ReadMore>
@@ -123,7 +123,7 @@ Miles took two Cellier concrete eggs at the beginning of 2020 and bottled their 
   borderColor: "#F1EDE2",
 }}>
 
-<Card.Body>
+<Card.Body style = {{paddingTop : "0rem"}}>
 
 <Card.Title><b>MPHUMI NDLAGANISA</b></Card.Title>
 <Card.Subtitle style ={{color : "red",fontSize: "15px"}}>WINEMAKER</Card.Subtitle>
@@ -144,7 +144,7 @@ Mphumi, alongside Warwick Denman, acquired Cellier’s first five prototype conc
 <Col style = {{textAlign : "center", paddingTop : "0rem"}} xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
 <Image src="Images/SecondCust.jpg" rounded  
 style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth : "3px", borderColor : "#EEECE6", }}
-width="80%"
+width="50%"
 
 />
 
@@ -156,7 +156,7 @@ width="80%"
 <Col style = {{textAlign : "center", paddingTop : "0rem"}}>
 <Image src="Images/ThirdCust.jpg" rounded  
 style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth : "3px", borderColor : "#EEECE6", }}
-width="80%"
+width="50%"
 />
 
 </Col>
@@ -169,16 +169,16 @@ width="80%"
   paddingTop : "0rem"
 }}>
 
-<Card.Body>
+<Card.Body style = {{paddingTop : "0rem"}}>
 
 <Card.Title><b>MARK LE ROUX</b></Card.Title>
 <Card.Subtitle style ={{color : "red",fontSize: "15px", }}>WINEMAKER</Card.Subtitle>
 <Card.Text style = {{paddingTop : "0rem", }}>
 <div className= "content">
 
-Growing up between Stellenbosch and the Karoo, Mark developed a deep love for nature and it’s mesmerizing mechanics at an early age.  Growing older, his appreciation and fascination for the relationship between chemistry, biology and geography developed and while it wasn’t the wine what grabbed him first, winemaking was the thread that tied these facets together. Mark graduated Stellenbosch University with a BSc Agric in winemaking & viticulture in 2007, working harvests at Rustenberg, Waterford and Morgenhof before being appointed assistant winemaker at L’Ormarins in 2008.
-<br></br>
+Growing up between Stellenbosch and the Karoo, Mark developed a deep love for nature and it’s mesmerizing mechanics at an early age.  Growing older, his appreciation and fascination for the relationship between chemistry, biology and geography developed and while it wasn’t the wine what grabbed him first, winemaking was the thread that tied these facets together. Mark graduated Stellenbosch University with a BSc Agric in winemaking & viticulture in 2007, 
 <ReadMore maxCharacterCount = "0">
+working harvests at Rustenberg, Waterford and Morgenhof before being appointed assistant winemaker at L’Ormarins in 2008.
 In 2009, Mark moved to Waterford Estate and as they say, the rest is history. In 2012 he was appointed winemaker and headed up the wine production team.  His focus is firmly rooted on the symbiotic relationship between viticulture and the environment. He favours a natural and sustainable winemaking philosophy, believing that these elements are key to the true understanding and reflection in a wine.  Marks philosophy and attention to detail coupled with his mantra of “walking the walk” saw him named as Tim Atkin’s South African young winemaker of the year in 2017. The reputation and quality of Waterford Estate continues to speak for itself, with Mark always pushing the winemaking boundaries in the cellar. 
 In 2020, Mark acquired a Cellier concrete egg for an exciting new project he is working on for the 2021 harvest. Watch this space! 
 </ReadMore>
