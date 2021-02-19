@@ -85,7 +85,7 @@ Inspired by the materials of ancient winemaking vessels and the miracle of natur
 <Accordion>
   <Card>
  
-  <Accordion.Toggle onClick ={ () => setIsOpen1(!isOpen1)} as={Card.Header} eventKey="0" style = {{ backgroundColor: '#EEECE6', textAlign : "left", borderBottom : "solid" , borderBottomColor : "black"}}>
+  <Accordion.Toggle onClick ={ () => setIsOpen1(!isOpen1)} as={Card.Header} eventKey="0" style = {{ backgroundColor: '#EEECE6' , textAlign : "left", borderBottom : "solid" , borderBottomColor : "black", borderBottomWidth : "3px" }}>
     <p style = {{paddingTop : "1rem"}} className = "alignleft"><b>NATURAL FLOW, LESS INTERVENTION</b></p>  <p style = {{fontSize : "2rem",}} className = "alignright"><div>{ isOpen1 ? 'x' : "+"}</div></p>
     </Accordion.Toggle >
     <Accordion.Collapse eventKey="0">

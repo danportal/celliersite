@@ -8,7 +8,16 @@ import Button from "react-bootstrap/Button";
 import { Container } from "react-bootstrap";
 
 function Home() {
+
+
+  function requestAQuoteClicked(e) {
+    window.location = "mailto:sales@cellierwinetanks.com"
+  }
+
   return (
+
+
+
     <div style={{ backgroundColor: "#EEECE6" }}>
         <style type="text/css">
     {`
@@ -122,6 +131,7 @@ function Home() {
 
 </Container>
 <Container fluid>
+
 <Row
         style={{
           height: "500px",
@@ -188,7 +198,7 @@ function Home() {
             <div
               className="text-white"
               style={{
-                fontSize: "2rem",
+                fontSize: "20px",
                 fontFamily: "montserrat",
                 textAlign: "center",
               }}
@@ -202,7 +212,7 @@ function Home() {
               class="text-white"
               style={{
                 textDecoration: "underline",
-                fontSize: "2rem",
+                fontSize: "20px",
                 fontFamily: "montserrat",
                 textAlign: "center",
                 color: "white",
@@ -267,7 +277,8 @@ style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth 
       </Row> 
       <br></br>
       <Row>
-     <Col style = {{textAlign : "center",}}> <Button variant="outline-secondary" style = {{borderColor : "black", border : "solid", borderRadius : "0" ,borderWidth : "1px"}}>ENQUIRE NOW</Button> </Col>
+     <Col style = {{textAlign : "center",}}> 
+     <Button variant="outline-secondary" onClick={requestAQuoteClicked} style = {{borderColor : "black", border : "solid", borderRadius : "0" ,borderWidth : "1px"}}>ENQUIRE NOW</Button> </Col>
       </Row>
       <br></br>
       </Card.Body>

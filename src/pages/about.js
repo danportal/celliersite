@@ -144,7 +144,7 @@ Cellier Wine Tanks started in a mountain side garage by owners John and William 
 <Row lg={2} xs={1} style ={{paddingTop : "3rem"}} >
 
 
-<Col>
+<Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
 <Card style={{
   fontFamily: "montserrat",
   backgroundColor: "#EEECE6",
@@ -175,7 +175,7 @@ Family is everything. We build close business relationships based on transparenc
 </Card>
 </Col>
 
-<Col style = {{textAlign : "center"}}>
+<Col style = {{textAlign : "center"}} xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
 <Image src="Images/AboutTank.jpg" rounded
 
 style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth : "3px", borderColor : "#EEECE6", padding : "0rem" , marginLeft : "0rem", marginTop : "1rem" , width : "75%"}}
