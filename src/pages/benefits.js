@@ -93,8 +93,7 @@ Note: need to center text */}
 <br></br>
 
 <Card.Text>
-The use of cement and clay vessels in their various forms have been used in winemaking for millennia. After losing favour to oak barrels and in modern times stainless steel, winemakers across the world are responding to new trends by increasingly incorporating new age concrete tanks into their cellars. Combining it’s own unique properties with the desirable attributes of both wood and stainless steel, concerte hits the sweet spot and the future of winemaking is favouring the reinvented tools of the old masters. 
-</Card.Text>
+The use of cement and clay vessels in their various forms have been used in winemaking for millennia. After losing favour to oak barrels and in modern times stainless steel, winemakers across the world are responding to new trends by increasingly incorporating new age concrete tanks into their cellars. Combining it’s own unique properties with the desirable attributes of both wood and stainless steel, concrete hits the sweet spot and the future of winemaking is favouring the reinvented tools of the old masters.</Card.Text>
 </Card.Body>
 </Card>
 </Col>

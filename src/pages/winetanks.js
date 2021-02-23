@@ -65,8 +65,7 @@ width="60%"/>
 
 <Card.Subtitle style = {{ paddingBottom : "1rem",fontSize : "25px"}}><b>CONCRETE EGGS</b></Card.Subtitle>
 <Card.Text style = {{textAlign : "left"}}>
-Inspired by the materials of ancient winemaking vessels and the miracle of nature’s finest design, egg-shaped concrete tanks are fast being an essential tool for all winemakers. Devoid of corners, the ovoid shape creates natural, continuous and temperature stable convection currents keeping lees suspended in a homogenous liquid with the majority of cap being submerged in the narrowed top.This allows winemakers to express their wines’ unique character with less intervention, developing amazing flavour, colour and mouthfeel. 
-</Card.Text>
+Inspired by the materials of ancient winemaking vessels and the miracle of nature’s finest design, egg-shaped concrete tanks are fast being an essential tool for all winemakers. Devoid of corners, the ovoid shape creates natural, continuous and temperature stable convection currents keeping lees suspended in a homogenous liquid with the majority of cap being submerged in the narrowed top.This allows winemakers to express their wines’ unique character with less intervention, developing amazing flavour, colour and mouthfeel. </Card.Text>
 </Card.Body>
 </Card>
 </Col>
@@ -89,7 +88,8 @@ Inspired by the materials of ancient winemaking vessels and the miracle of natur
     <p style = {{paddingTop : "1rem"}} className = "alignleft"><b>NATURAL FLOW, LESS INTERVENTION</b></p>  <p style = {{fontSize : "2rem",}} className = "alignright"><div>{ isOpen1 ? 'x' : "+"}</div></p>
     </Accordion.Toggle >
     <Accordion.Collapse eventKey="0">
-      <Card.Body style = {{ backgroundColor: '#EEECE6',  borderColor: '#EEECE6', }}>The thermodynamic properties of the vertical egg shape create slow but continuous convection currents within the tank. Devoid of corners and owing to the core of the egg retaining more heat, a rising vortex gently creates a controlled stirring of the must or aging wine. Once the wine rises and cools at the top, it sinks down the cooler walls of the concrete, the bulbous bottom offering lees a large surface area to settle. During fermentation, the narrowed top of the egg also keeps most of the cap submerged and in contact with the circular flow of the homogenous liquid (lessening the need for “punch-down” intervention). All these dynamics add depth, volume and enhances colour, while the continuous natural suspension of the lees builds texture and mouthfeel, leading to more complex and complete wines with beautiful colour. </Card.Body>
+      <Card.Body style = {{ backgroundColor: '#EEECE6',  borderColor: '#EEECE6', }}>The thermodynamic properties of the vertical egg shape create slow but continuous convection currents within the tank. Devoid of corners and owing to the core of the egg retaining more heat, a rising vortex gently creates a controlled stirring of the must or aging wine. Once the wine rises and cools at the top, it sinks down the cooler walls of the concrete, the bulbous bottom offering lees a large surface area to settle. During fermentation, the narrowed top of the egg also keeps most of the cap submerged and in contact with the circular flow of the homogenous liquid (lessening the need for “punch-down” intervention). All these dynamics add depth, volume and enhances colour, while the continuous natural suspension of the lees builds texture and mouthfeel, leading to more complex and complete wines with beautiful colour. 
+</Card.Body>
     </Accordion.Collapse>
   </Card>
   <Card>
@@ -99,6 +99,7 @@ Inspired by the materials of ancient winemaking vessels and the miracle of natur
     </Accordion.Toggle>
     <Accordion.Collapse eventKey="1">
       <Card.Body style = {{ backgroundColor: '#EEECE6',  borderColor: '#EEECE6', }}>The egg shaped tanks consist of an “inner” egg encased in an outer shell. This uniquely developed process enables the wine to be in contact with pure, chemical free concrete, while the exterior is a seamless reinforced “blank canvas” ready to express a personalised finish.This design also allows a cooling system to be inserted into the wall to slowly draw heat from the within the walls of the egg.The membrane between the two castings enhances the insulating properties of the 120mm thick concrete wall, which also acts a heat sink.
+
 </Card.Body>
     </Accordion.Collapse>
   </Card>
@@ -108,7 +109,8 @@ Inspired by the materials of ancient winemaking vessels and the miracle of natur
       <p  style = {{paddingTop : "1rem"}}  className = "alignleft"><b>MORE MOBILITY, EASY MAINTENANCE</b> </p>  <p style = {{fontSize : "2rem",}} className = "alignright"><div>{ isOpen3 ? 'x' : "+"}</div></p>
     </Accordion.Toggle>
     <Accordion.Collapse eventKey="2">
-      <Card.Body style = {{ backgroundColor: '#EEECE6',  borderColor: '#EEECE6', }}>Space constraints for smaller cellars mean that flexibility and movability is key. The tanks can be easily moved with a suitable forklift, while the removable front manway door and top manhole hatch enable easy access during winemaking and cleaning. With the exception of the top manhole neck, all fittings are removable. This makes cleaning easier and should parts be accidently damaged, they are easily replaced.</Card.Body>
+      <Card.Body style = {{ backgroundColor: '#EEECE6',  borderColor: '#EEECE6', }}>Space constraints for smaller cellars mean that flexibility and movability is key. The tanks can be easily moved with a suitable forklift, while the removable front manway door and top manhole hatch enable easy access during winemaking and cleaning. With the exception of the top manhole neck, all fittings are removable. This makes cleaning easier and should parts be accidently damaged, they are easily replaced.
+</Card.Body>
     </Accordion.Collapse>
   </Card>
   <Card>
@@ -119,7 +121,7 @@ Inspired by the materials of ancient winemaking vessels and the miracle of natur
       
     </Accordion.Toggle>
     <Accordion.Collapse eventKey="3">
-      <Card.Body style = {{ backgroundColor: '#EEECE6',  borderColor: '#EEECE6', }}>The look of your cellar is a big deal - for you and for your visitors. This is your sacred space where you craft your masterpieces and it’s where you need to find inspiration during those tough harvests. Cellier’s egg shaped tanks have an interrupted ovoid form ready to express itself. From off shutter concrete to unique marble like pigmented finishes, it’s only the imagination that limits what possible.</Card.Body>
+      <Card.Body style = {{ backgroundColor: '#EEECE6',  borderColor: '#EEECE6', }}>The look of your cellar is a big deal - for you and for your visitors. This is your sacred space where you craft your masterpieces and it’s where you need to find inspiration during those tough harvests. Cellier’s egg shaped tanks have an interrupted ovoid form ready to express itself. From off shutter concrete to unique marble like pigmented finishes, it’s only the imagination that limits what possible. </Card.Body>
     </Accordion.Collapse>
   </Card>
 </Accordion>
@@ -156,13 +158,14 @@ SPECIFICATIONS
     </tr>
     <tr striped bordered hover style={{"borderWidth":"2px",  backgroundColor: '#EEECE6' , 'borderColor':"black", 'borderStyle':'solid',paddingRight : "2rem" }}>
       <td striped bordered hover style={{"borderWidth":"2px", backgroundColor: '#EEECE6', 'borderColor':"black", 'borderStyle':'solid', }}>Features:</td>
-      <td colSpan="2">400 mm OD top manhole w/ bung hole <br></br>
-                      380 mm Front Oval manway           <br></br>       
+      <td colSpan="2">400mm OD top manhole w/ bung hole <br></br>
+                      380mm Front Oval manway          <br></br>       
                       Thermometer probe                  <br></br> 
                       Sampling tap                       <br></br>     
-                      Optional cooling cooling           <br></br>   
-                      Racking port w/ butterfly valve    <br></br>   
-                      Drainage port w/ butterfly valve       </td>
+                      Optional cooling coil          <br></br>   
+                      Drainage port w/ butterfly valve    <br></br>   
+                      Self leveling adjustable feet      <br></br>
+                      Customised exterior finishes </td>
     </tr>
   </tbody>
 </Table>

@@ -75,8 +75,8 @@ style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth 
 <br></br>
 <Card.Text style = {{textAlign : "left"}}>
 Cellier Wine Tanks started in a mountain side garage by owners John and William after discovering the European egg shaped tanks in a local winery in early 2016. <br></br><br></br>
- With a mutual love of wine and already operating in the concrete industry, pursuing this new project was the perfect step forward. Inspired by the European innovators and our French family heritage, the father and son duo embarked on an adventure to develop a uniquely constructed concrete egg that stood out from the rest. <br></br><br></br>
- Over the next 4 years, working prototypes were continually tested, redesigned and refined until in late 2019, a prototype was born that satisfied their scrupulous expectations. In January 2020, Miles Mossop took a leap of faith and was the first winemaker to both ferment and age in Cellier eggs, one filled with Chenin Blanc, the other with Cinsault. 
+With a mutual love of wine and already operating in the concrete industry, pursuing this new project was the perfect step forward. Inspired by the European innovators and our French family heritage, the father and son duo embarked on an adventure to develop a uniquely constructed concrete egg that stood out from the rest. <br></br><br></br>
+Over the next 4 years, working prototypes were continually tested, redesigned and refined until in late 2019, a prototype was born that satisfied their scrupulous expectations. In January 2020, Miles Mossop took a leap of faith and was the first winemaker to both ferment and age in Cellier eggs, one filled with Chenin Blanc, the other with Cinsault. 
 </Card.Text>
 </Card.Body>
 </Card>
@@ -129,9 +129,8 @@ Cellier Wine Tanks started in a mountain side garage by owners John and William 
 
               }}
             >
-            Cellier’s driving force is simple - to create elegant, innovative, 
-            world class concrete wine tanks <br></br>  that give winemakers the control 
-            to craft their masterpieces - with less intervention.             </div>
+            Cellier’s driving force is simple - to create elegant, innovative, world class concrete wine tanks <br></br>  
+            that give winemakers the control to craft their masterpieces - with less intervention.              </div>
 
 
           </div>
@@ -162,13 +161,13 @@ Cellier Wine Tanks started in a mountain side garage by owners John and William 
 <Card.Text style = {{textAlign : "left"}}>
 
 Integrity is the common denominator at Cellier. Our relationships, our conduct, our products...we commit to building a reputation based on trust and honour. 
+
 <br></br>
 <br></br>
 We pride ourselves in our love for craftsmanship... Some may call it perfectionist - we prefer to call it “attention to detail”. In today’s age, it’s becoming a rare commodity and we like to think it separates us from the rest of the pack.
 <br></br>
 <br></br>
 Family is everything. We build close business relationships based on transparency and trust. We go the extra mile, care for your interests and where possible share our knowledge. Those who are friends, are destined to become like family in time. 
-
 </Card.Text>
 
 </Card.Body>
@@ -208,7 +207,6 @@ style={{ textAlign: 'center', border : "solid", borderRadius : "0" ,borderWidth 
 <Card.Subtitle style = {{fontSize : "2rem"}}><b>THE HISTORY OF OUR NAME</b></Card.Subtitle>
 <br></br>
 <Card.Text>
-
 Part tribute to family, part ode to Cape wine history, Cellier is a name rich in tradition. John’s mother, Lynette Celliers, was a direct descendant of Josue Cellier from Orleans on the Loire River in Northern Central France. He arrived in the Cape with his wife, Elizabeth, as a refugee French Huguenot on board the VOC Reigersdaal in August, 1700, settling in Bottlerary. As well as a carpenter, Josue was a viticulturist and winemaker in the Cape and went on to own a farm called De Olreans in Dal Josafat, Klein Drakenstein where he farmed till his passing in 1721. 
 <br></br>
 <br></br>
